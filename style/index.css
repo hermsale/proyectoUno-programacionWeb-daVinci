@@ -1,0 +1,73 @@
+html{
+    /* reseteamos el font size para que rem trabaje con un equivalente a 10 px = 1 rem  */
+    font-size: 62.5%;
+}    
+
+body{
+    background-color: rgba(61, 60, 60, 0.637);
+}    
+
+/* FORMATEO TEXTOS*/
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+a{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 2.5rem;
+}
+
+.p__footer{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/*  ///////////////////////////////////////////////////////// */
+
+.section__img--peliculas{
+    width: 100%;
+}    
+
+.div__section--home{
+    display: flex;
+    justify-content: center;
+}     
+
+img{
+    width: 300px;
+    height: 500px;
+    margin: 5px;
+}    
+
+img:hover{
+    border:2px solid red;
+}    
+
+#pelicula-principal{
+    display: block;
+    margin: auto;
+    width: 600px;
+    height: 700px;
+}    
+
+#pelicula-principal:hover{
+    border:2px solid rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    /* padding: 1px; */
+}    
+
+.div__img--pelicula{
+    background-color: rgb(146, 146, 146);
+}    
+
+.div__img--peliculas-recomendadas{
+    display: flex;
+    justify-content: flex-start;
+}
