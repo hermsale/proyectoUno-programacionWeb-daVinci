@@ -1,9 +1,19 @@
+/* reseteamos el font size para que rem trabaje con un equivalente a 10 px = 1 rem  */
 html{
-    /* reseteamos el font size para que rem trabaje con un equivalente a 10 px = 1 rem  */
+    /* tamaño letra */
     font-size: 62.5%;
 }    
 
+/* reseteamos el margin y padding de todos los elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho y alto del elemento */
+}
+
+/* establezco estilos básicos para el body */
 body{
+    font-family: Arial, sans-serif;
     background-color: rgba(61, 60, 60, 0.637);
 }    
 
@@ -29,8 +39,40 @@ p{
     text-align: center;
 }
 
-/*  ///////////////////////////////////////////////////////// */
+/************************************************************** */
 
+/* barra de navegacion */
+
+.navbar {
+    background-color: #333; /* Color de fondo del navbar */
+}
+
+.navbar ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    display: flex; /* Usa flexbox para alinear horizontalmente los elementos */
+    justify-content:center; /* Espacio uniforme entre los elementos */
+    padding: 10px; /* Añade un poco de espacio alrededor del navbar */
+    margin: 0; /* Quita el margen por defecto */
+}
+
+.navbar ul li {
+    /* display: flex; */
+    margin: 0 10px; /* Espacio entre los elementos de la lista */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: #fff; /* Color del texto */
+    padding: 5px 10px; /* Espaciado dentro de los enlaces */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.navbar ul li a:hover {
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/*******************************************************************  */
 .section__img--peliculas{
     width: 100%;
 }    
@@ -46,9 +88,6 @@ img{
     margin: 5px;
 }    
 
-img:hover{
-    border:2px solid red;
-}    
 
 #pelicula-principal{
     display: block;
@@ -57,17 +96,20 @@ img:hover{
     height: 700px;
 }    
 
-#pelicula-principal:hover{
-    border:2px solid rgb(255, 255, 255);
-    /* background-color: rgb(255, 255, 255); */
-    /* padding: 1px; */
-}    
+.div__img--peliculas-recomendadas{
+    display: flex;
+    justify-content: flex-start;
+}
 
 .div__img--pelicula{
     background-color: rgb(146, 146, 146);
 }    
 
-.div__img--peliculas-recomendadas{
-    display: flex;
-    justify-content: flex-start;
-}
+/* decorado de cuando paso por arriba del elemento */
+img:hover{
+    border:2px solid red;
+}    
+
+#pelicula-principal:hover{
+    border:2px solid rgb(255, 255, 255);
+}    
