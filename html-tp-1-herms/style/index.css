@@ -35,7 +35,7 @@ p{
 }
 
 .p__footer{
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -44,6 +44,7 @@ p{
 /* barra de navegacion */
 
 .navbar {
+    display: flex;
     background-color: #333; /* Color de fondo del navbar */
 }
 
@@ -51,20 +52,20 @@ p{
     list-style-type: none; /* Quita los puntos de la lista */
     display: flex; /* Usa flexbox para alinear horizontalmente los elementos */
     justify-content:center; /* Espacio uniforme entre los elementos */
-    padding: 10px; /* Añade un poco de espacio alrededor del navbar */
+    padding: 1em; /* Añade un poco de espacio alrededor del navbar */
     margin: 0; /* Quita el margen por defecto */
 }
 
 .navbar ul li {
     /* display: flex; */
-    margin: 0 10px; /* Espacio entre los elementos de la lista */
+    margin: 0 1em; /* Espacio entre los elementos de la lista */
 }
 
 .navbar ul li a {
     text-decoration: none; /* Quita el subrayado de los enlaces */
     color: #fff; /* Color del texto */
-    padding: 5px 10px; /* Espaciado dentro de los enlaces */
-    border-radius: 5px; /* Bordes redondeados */
+    padding: 0.5rem 1rem; /* Espaciado dentro de los enlaces */
+    border-radius: 0.5em; /* Bordes redondeados */
     transition: background-color 0.3s ease; /* Transición suave del color de fondo */
 }
 
@@ -83,17 +84,17 @@ p{
 }     
 
 img{
-    width: 300px;
-    height: 500px;
-    margin: 5px;
+    width: 30%;
+    margin: 0.5em;
+    max-width: 44em;
+    max-height: 50em;
 }    
 
 
 #pelicula-principal{
-    display: block;
     margin: auto;
-    width: 600px;
-    height: 700px;
+    width: 60em;
+    height: 70em;
 }    
 
 .div__img--peliculas-recomendadas{
@@ -102,14 +103,47 @@ img{
 }
 
 .div__img--pelicula{
+    display: flex;
     background-color: rgb(146, 146, 146);
 }    
 
 /* decorado de cuando paso por arriba del elemento */
 img:hover{
-    border:2px solid red;
+    border:0.2em solid red;
 }    
 
 #pelicula-principal:hover{
     border:2px solid rgb(255, 255, 255);
 }    
+
+/* laptop 1440 width */
+/* CAROUSEL //////////////////////////////////////////////////////////// */
+.section__carousel {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: 400%; /* Ancho total = número de slides * 100% */
+    animation: carousel-animation 12s infinite; /* 3 segundos por slide, 4 slides en total */
+  }
+  
+  .slide {
+    flex: 0 0 50%; /* Cada slide ocupa el 25% del contenedor (4 slides en total) */
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes carousel-animation {
+    0% { transform: translateX(0); } /* Inicio de la animación */
+    20%, 25% { transform: translateX(0); } /* Evita un desplazamiento brusco al inicio */
+    45%, 50% { transform: translateX(-100%); } /* Slide 2 */
+    70%, 75% { transform: translateX(-200%); } /* Slide 3 */
+  }
