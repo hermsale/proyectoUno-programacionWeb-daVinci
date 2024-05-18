@@ -108,7 +108,7 @@ img{
 }    
 
 /* decorado de cuando paso por arriba del elemento */
-img:hover{
+.section__img--peliculas img:hover{
     border:0.2em solid red;
 }    
 

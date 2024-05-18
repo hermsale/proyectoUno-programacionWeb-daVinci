@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+    background-color: #3333338c;
+}
+
+.menu {
+   
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu > li {
+    float: left;
+}
+
+.menu > li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menu > li a:hover {
+    background-color: #b5b5b5;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+
+.submenu li a {
+    color: white;
+    padding: 5px 3px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.submenu li a:hover {
+    background-color: #b5b5b5;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.menu img{
+    width: 25px;
+    height: 25px;
+}
+
+.menu__right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+
+}
+
+.submenu__right{
+    right: 0; /* de esta forma alineo el contenido de submenu__right al borde derecho*/
+}
+
+.menu__right p{
+    margin: 0 5px;
+}
+
+.menu__right--lupa{
+    margin-right: 20px;
+    color: white;
+}
