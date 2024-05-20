@@ -3,7 +3,7 @@ body {
     margin: 0;
 }
 
-nav {
+.nav__menu {
     display: flex;
     position: fixed;
     top: 0;
