@@ -73,9 +73,9 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
     color: white;
-
+    width: 20%;
 }
 
 .submenu__right{
