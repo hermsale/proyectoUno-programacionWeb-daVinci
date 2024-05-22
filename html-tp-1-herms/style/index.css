@@ -27,11 +27,11 @@ h2{
 }
 
 a{
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 p{
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .p__footer{
@@ -40,38 +40,6 @@ p{
 }
 
 /************************************************************** */
-
-/* barra de navegacion */
-
-.navbar {
-    display: flex;
-    background-color: #333; /* Color de fondo del navbar */
-}
-
-.navbar ul {
-    list-style-type: none; /* Quita los puntos de la lista */
-    display: flex; /* Usa flexbox para alinear horizontalmente los elementos */
-    justify-content:center; /* Espacio uniforme entre los elementos */
-    padding: 1em; /* Añade un poco de espacio alrededor del navbar */
-    margin: 0; /* Quita el margen por defecto */
-}
-
-.navbar ul li {
-    /* display: flex; */
-    margin: 0 1em; /* Espacio entre los elementos de la lista */
-}
-
-.navbar ul li a {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    color: #fff; /* Color del texto */
-    padding: 0.5rem 1rem; /* Espaciado dentro de los enlaces */
-    border-radius: 0.5em; /* Bordes redondeados */
-    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
-}
-
-.navbar ul li a:hover {
-    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
-}
 
 /*******************************************************************  */
 .section__img--peliculas{

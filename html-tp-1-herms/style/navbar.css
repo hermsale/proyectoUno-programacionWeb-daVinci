@@ -3,10 +3,14 @@ body {
     margin: 0;
 }
 
+header{
+    width: 100%;
+}
+
 .nav__menu {
     display: flex;
     position: fixed;
-    top: 0;
+    top: 0px;
     width: 100%;
     z-index: 1000;
     justify-content: space-between;
@@ -20,6 +24,7 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    font-size:small;
 }
 
 .menu > li {
@@ -38,6 +43,7 @@ body {
 }
 
 .submenu {
+    font-size: xx-large;
     display: none;
     position: absolute;
     background-color: #333;
@@ -69,7 +75,17 @@ body {
     height: 25px;
 }
 
-.menu__right{
+.menu__right--desplegado{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 20%;
+}
+
+
+.menu__right--hamburguesa{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,6 +103,82 @@ body {
 }
 
 .menu__right--lupa{
-    margin-right: 20px;
+    /* margin-right: 20px; */
     color: white;
+}
+
+
+/* pantalla pequeña lado izquierdo */
+@media(max-width:768px){
+    .menu__left--hamburguesa{
+        display: flex;
+        width: 10%;
+        align-items: center;
+       justify-content: center;
+    }
+
+    .menu__left--desplegado{
+        display: none;
+    }
+
+    .menu__right--hamburguesa{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        width: 20%;
+    }
+}
+
+/* pantalla grande lado izquierdo */
+@media(min-width:768px){
+    .menu__left--desplegado{
+        display: flex;
+        width: 28%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu__left--hamburguesa{
+        display: none;
+    }
+
+    .menu__right--hamburguesa{
+        display: flex;
+        
+    }
+
+    .menu__right--desplegado{
+        display: none;
+    }
+}
+
+/* pantalla chica lado derecho */
+@media(max-width:768px){
+    .menu__right--hamburguesa{
+        display: flex;
+        /* width: 10%; */
+
+        align-items: center;
+       justify-content: space-between;
+    }
+
+    .menu__right--desplegado{
+        display: none;
+    }
+}
+
+@media(min-width:1399px){
+    .menu__right--desplegado{
+        display: flex;
+        width: 28%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .menu__right--hamburguesa{
+        display: none;
+    }
+
 }
