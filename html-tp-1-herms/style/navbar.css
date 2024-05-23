@@ -8,6 +8,7 @@ header{
 }
 
 .nav__menu {
+    height: 35px;
     display: flex;
     position: fixed;
     top: 0px;
@@ -42,7 +43,8 @@ header{
     background-color: #b5b5b5;
 }
 
-.submenu {
+.submenu{
+    /* top: 35px; */
     font-size: xx-large;
     display: none;
     position: absolute;
@@ -70,15 +72,6 @@ header{
     display: block;
 }
 
-.menu img{
-    /* width: 25px; */
-    height: 25px;
-    width: 50%;
-    margin: 0.5em;
-    /* max-width: 44em; */
-    /* max-height: 50em; */
-}
-
 .menu__right--desplegado{
     display: flex;
     flex-direction: row;
@@ -98,8 +91,23 @@ header{
     width: 20%;
 }
 
+
+.img__icono--hamburguesa{
+    width: 25px;
+    height: auto;
+  }
+
+.img__right--lupa{
+    width: 25px;
+}
+
+.img__right--usuario{
+    width: 25px;
+}
+
 .submenu__right{
     right: 0; /* de esta forma alineo el contenido de submenu__right al borde derecho*/
+    /* top:40px; a 40px de distancia del top */
 }
 
 .menu__right p{
@@ -144,6 +152,10 @@ header{
         align-items: center;
     }
 
+    /* .img__left--hamburguesa img{
+        width: 25px;
+    } */
+
     .menu__left--hamburguesa{
         display: none;
     }
@@ -159,7 +171,7 @@ header{
 }
 
 /* pantalla chica lado derecho */
-@media(max-width:768px){
+@media(max-width:767px){
     .menu__right--hamburguesa{
         display: flex;
         /* width: 10%; */
@@ -171,10 +183,26 @@ header{
     .menu__right--desplegado{
         display: none;
     }
+
+    .img__right--lupa{
+        width: 25px;
+        height: 25px;
+    }
+
+    .img__right--usuario{
+        width: 25px;
+        height: 25px;
+        margin-right: 5px;
+        /* margin-top: 5px; */
+    }
 }
 
-@media(min-width:1399px){
-    .menu__right--desplegado{
+/* pantalla mediana */
+@media(min-width:768px )and(max-width:1399px){
+    .nav__menu{
+        margin: 10px 0px;
+    }
+    .menu__left--desplegado{
         display: flex;
         width: 28%;
         justify-content: space-evenly;
@@ -183,6 +211,49 @@ header{
 
     .menu__right--hamburguesa{
         display: none;
+    }
+
+    .img__right--lupa{
+        width: 25px;
+        height: 25px;
+    }
+
+    .img__right--usuario{
+        width: 30px;
+        height: 30px;
+        margin: 5px 0px;
+    }
+}
+
+/* pantalla grande lado derecho */
+@media(min-width:1400px){
+    
+    .menu__right--desplegado{
+        display: flex;
+        width: 28%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .li__usuario{
+        display: flex;
+    }
+
+    .li__usuario p{
+        margin-right: 10px;
+    }
+    .menu__right--hamburguesa{
+        display: none;
+    }
+
+    .img__right--lupa{
+        width: 25px;
+        height: 25px;
+    }
+
+    .img__right--usuario{
+        width: 25px;
+        height: 25px;
     }
 
 }

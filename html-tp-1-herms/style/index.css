@@ -104,11 +104,6 @@ img{
     flex: 0 0 50%; /* Cada slide ocupa el 25% del contenedor (4 slides en total) */
   }
   
-  img {
-    width: 100%;
-    height: auto;
-  }
-
   @keyframes carousel-animation {
       0% { transform: translateX(0); } /* Inicio de la animación */
       20%, 25% { transform: translateX(0); } /* Evita un desplazamiento brusco al inicio */
