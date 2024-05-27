@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/navbar.css">
+
+    <!-- bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
 </head>
@@ -32,7 +36,7 @@
             <!-- menu usuario -->
             <ul class="menu menu__right--desplegado">
                 <li class="menu__right--lupa"><img class="img__right--lupa" src="./img/navbar/lupa.png" alt="menu"></li>
-                    <li class="li__usuario"><p>Alejandro</p><a href="#"><img class="img__right--usuario" src="./img/navbar/usuario.png" alt="menu"></a>
+                    <li class="li__usuario"><h3 class="me-2">Alejandro</h3><a href="#"><img class="img__right--usuario" src="./img/navbar/usuario.png" alt="menu"></a>
                         <ul class="submenu submenu__right">
                             <li><a href="#">Cuenta y configuración</a></li>
                             <li><a href="contacto.html">Ayuda</a></li> 
@@ -57,36 +61,30 @@
         </nav>
     </header>
 
-    <!-- <section class="section__carousel">
-        <div class="slides">
-            <div class="slide">
-                <img src="./img/fast-furious.jpg" alt="rapido y furioso">
+    <div class="container mt-5">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/carousel/jurassicworld.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel/loki.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/carousel/terminator.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <div class="slide">
-                <img src="./img/pulp-fiction.jpg" alt="pulp fuction">
-            </div>
-            <div class="slide">
-                <img src="./img/duro-de-matar.jpg" alt="duro de matar">
-            </div>
-            <div class="slide">
-                <img src="./img/terminator-1.jpg" alt="terminator 1">
-            </div>   
-            <div class="slide">
-                <img src="./img/rambo-2.jpg" alt="rambo 2">
-            </div>   
-            <div class="slide">
-                <img src="./img/scars-face.jpg" alt="scar face">
-            </div>   
-        </div>
-    </section> -->
-
-    <!-- <section class="section__img--peliculas">
-        <div class="div__section--home">
-            <img src="./img/fast-furious.jpg" alt="rapido y furioso">
-            <img src="./img/rambo-2.jpg" alt="rambo 2">
-            <img src="./img/terminator-2.jpg" alt="terminator 2">
-        </div>
-    </section> -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    
     <!-- <footer>
         <p class="p__footer">
             ¿Preguntas? Llama al 0800 345 1111
@@ -98,5 +96,8 @@
             Contáctanos
         </p>
     </footer> -->
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

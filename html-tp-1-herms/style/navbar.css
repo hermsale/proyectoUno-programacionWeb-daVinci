@@ -79,6 +79,7 @@ header{
     justify-content: space-around;
     color: white;
     width: 20%;
+    border-radius: 15px;
 }
 
 
@@ -162,7 +163,7 @@ header{
 
     .menu__right--hamburguesa{
         display: flex;
-        
+        border-radius: 15px;
     }
 
     .menu__right--desplegado{
@@ -175,7 +176,7 @@ header{
     .menu__right--hamburguesa{
         display: flex;
         /* width: 10%; */
-
+        /* border-radius: 15px; */
         align-items: center;
        justify-content: space-between;
     }
@@ -210,7 +211,8 @@ header{
     }
 
     .menu__right--hamburguesa{
-        display: none;
+        border-radius: 20px;
+        display: flex;
     }
 
     .img__right--lupa{
