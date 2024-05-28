@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="/style/navbar.css">
     <link rel="stylesheet" href="/style/contacto.css">
@@ -9,29 +11,54 @@
     <title>Contacto</title>
 </head>
 <body>
-    <nav class="nav__menu">
-        <ul class="menu menu__left">
-            <li><a href="#"><img src="./img/navbar/menu.png" alt="menu"></a></a>
-                <ul class="submenu">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="categorias.html">Categorias</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </li>    
-        </ul>
-        <ul class="menu menu__right">
-            <li class="menu__right--lupa"><img src="./img/navbar/lupa.png" alt="menu"></li>
-            <li><p>Alejandro</p></li>
-            <li><a href="#"><img src="./img/navbar/usuario.png" alt="menu"></a>
-                <ul class="submenu submenu__right">
-                    <li><a href="#">Cuenta</a></li>
-                    <li><a href="#">Cerrar sesión</a></li>
-                </ul>
-            </li> 
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="nav__menu">                
+            <!-- menu peliculas -->
+            <ul class="menu menu__left--desplegado">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="pelicula.html">Peliculas</a></li>
+                <!-- <li><a href="#">Series</a></li> proximamente -->
+                <li><a href="categorias.html">Categorias</a></li>                
+            </ul>
 
+            <ul class="menu menu__left--hamburguesa">
+                <li><a href="#"><img class="img__icono--hamburguesa" src="./img/navbar/menu.png" alt="menu"></a>
+                    <ul class="submenu submenu__left">
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="pelicula.html">Peliculas</a></li>
+                        <!-- <li><a href="#">Series</a></li> proximamente -->
+                        <li><a href="categorias.html">Categorias</a></li> 
+                    </ul>
+                </li>    
+            </ul>
+
+            <!-- menu usuario -->
+            <ul class="menu menu__right--desplegado">
+                <li class="menu__right--lupa"><img class="img__right--lupa" src="./img/navbar/lupa.png" alt="menu"></li>
+                    <li class="li__usuario"><h3 class="me-2">Alejandro</h3><a href="#"><img class="img__right--usuario" src="./img/navbar/usuario.png" alt="menu"></a>
+                        <ul class="submenu submenu__right">
+                            <li><a href="#">Cuenta y configuración</a></li>
+                            <li><a href="contacto.html">Ayuda</a></li> 
+                            <li><a href="#">Perfiles</a></li> 
+                            <li><a href="#">Cerrar sesión</a></li>
+                        </ul>
+                    </li> 
+            </ul>            
+            
+            <ul class="menu menu__right--hamburguesa">
+                <li class="menu__right--lupa"><img class="img__right--lupa" src="./img/navbar/lupa.png" alt="menu"></li>
+                <li><a href="#"><img class="img__right--usuario" src="./img/navbar/usuario.png" alt="menu"></a>
+                    <ul class="submenu submenu__right">
+                        <li><a href="#">Alejandro</a></li>
+                        <li><a href="#">Cuenta y configuración</a></li>
+                        <li><a href="contacto.html">Ayuda</a></li> 
+                        <li><a href="#">Perfiles</a></li> 
+                        <li><a href="#">Cerrar sesión</a></li>
+                    </ul>
+                </li> 
+            </ul>
+        </nav>
+    </header>
     <section class="section__formulario">
         <form id="contactForm" action="/submit-your-form-handler" method="POST">
             <label for="nombre">Nombre:</label>

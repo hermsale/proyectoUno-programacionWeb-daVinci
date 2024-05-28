@@ -52,8 +52,13 @@ header{
     min-width: 160px;
     list-style-type: none;
     padding: 0;
-    margin-top: 0;
+    margin-top: -1px;
     z-index: 1000;
+}
+
+.menu__left--desplegado li a{
+    padding: 10px;
+
 }
 
 .submenu li a {
@@ -79,7 +84,7 @@ header{
     justify-content: space-around;
     color: white;
     width: 20%;
-    border-radius: 15px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 
@@ -90,6 +95,7 @@ header{
     justify-content: space-around;
     color: white;
     width: 20%;
+    border-radius: 15px 0px 0px 15px;
 }
 
 
@@ -163,7 +169,7 @@ header{
 
     .menu__right--hamburguesa{
         display: flex;
-        border-radius: 15px;
+        /* border-radius: 15px; */
     }
 
     .menu__right--desplegado{
@@ -211,7 +217,7 @@ header{
     }
 
     .menu__right--hamburguesa{
-        border-radius: 20px;
+        /* border-radius: 15px 0px 0px 15px; */
         display: flex;
     }
 
