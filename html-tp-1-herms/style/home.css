@@ -8,7 +8,7 @@
     margin-right: 10px; /* Ajusta el espacio entre las cards */
 }
 
-
+/* fuente */
 .exo-2{
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
@@ -57,7 +57,7 @@
     /* transition: opacity 0.3s ease-in-out; */
 }
 
-/* carousel */
+/* carousel principal */
 .carousel-inner {
     display: flex;
     white-space: nowrap;
@@ -91,48 +91,131 @@
     transition:  background-color 1s ease;
     border: 0px;
     margin: 2px;
+
+
+    /* efecto al dejar de pasar por arriba de la card */
+    transition: transform 0.3s ease, background-color 1s ease;
 }
 .card-netflix-app:hover{
     width: 15%;
-    background-color: rgb(255, 2, 12);
+    background-color: rgb(255, 2, 12, 0.600);
     transition:  background-color 1s ease;
+
+    /* efecto escala */
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(0.9); 
 }
 
 .card-disney-app:hover{
     width: 15%;
-    background-color: rgb(0, 48, 62);
+    background-color: rgba(0, 48, 62, 0.600);
     transition:  background-color 1s ease;
+
+    /* efecto escala */
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(0.9); 
 }
 
 .card-hbo-app:hover{
     width: 15%;
-    background-color: rgb(50, 9, 88);
+    background-color: rgb(50, 9, 88, 0.600);
     transition:  background-color 1s ease;
+
+    /* efecto escala */
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(0.9); 
 }
 
 .card-paramount-app:hover{
     width: 15%;
-    background-color: rgb(0, 100, 255);
+    background-color: rgb(0, 100, 255, 0.600);
     transition:  background-color 1s ease;
    
+    /* efecto escala */
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(0.9); 
 }
 
 .card-paramount:hover{
-    border: rgb(255, 255, 255) 1px solid;
+    border: rgb(255, 255, 255, 0.600) 1px solid;
 }
 
 .card-prime-app:hover{
     width: 15%;
-    background-color: rgb(0, 153, 255);
+    background-color: rgb(0, 153, 255, 0.600);
     transition:  background-color 1s ease;
+
+    /* efecto escala */
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(0.9); 
 }
 
 .card-prime:hover{
     border: rgb(0, 0, 0) 1px solid;
 }
 
+/* efecto al soltar */
 .card-add-app:hover{
     width: 15%;
-    background-color: rgb(124, 179, 26);
+    background-color: rgb(124, 179, 26, 0.600);
     transition:  background-color 1s ease;
+    /* efecto escala */
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(0.9); 
 }
+
+/* botones del carousel top 10 */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 5%; /* Ajusta el tamaño del botón */
+
+    z-index: 9999;
+}
+
+.carousel-control-prev{
+    left: 0;
+}
+
+.carousel-control-next{
+    right: 0;
+}
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+    
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 100%; /* Hace que el ícono ocupe todo el tamaño del contenedor */
+    height: 100%; /* Hace que el ícono ocupe todo el tamaño del contenedor */
+}
+
+
+/* seccion seguir viendo */
+.card-seguir-viendo:hover{
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(1.08); 
+    z-index: 100;
+}
+
+.card-seguir-viendo{
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(1); 
+
+    margin: 5px;
+}
+
+/* seccion top 10 */
+/* .card:hover{
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(1.08); 
+    z-index: 100;
+}
+
+.card{
+    transition: transform 0.3s ease, background-color 1s ease;
+    transform: scale(1); 
+} */
