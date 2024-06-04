@@ -1,3 +1,4 @@
+
 .scrolling-wrapper {
     overflow-x: visible;
     white-space: nowrap;
@@ -81,4 +82,57 @@
     width: 100%;
     height: auto; /* Maintain aspect ratio */
     border-radius: 0; /* Remove rounded corners if not needed */
+}
+
+/* aplicaciones fondo */
+.card-app{
+    width: 15%;
+    background-color: rgb(0, 0, 0,0 );
+    transition:  background-color 1s ease;
+    border: 0px;
+    margin: 2px;
+}
+.card-netflix-app:hover{
+    width: 15%;
+    background-color: rgb(255, 2, 12);
+    transition:  background-color 1s ease;
+}
+
+.card-disney-app:hover{
+    width: 15%;
+    background-color: rgb(0, 48, 62);
+    transition:  background-color 1s ease;
+}
+
+.card-hbo-app:hover{
+    width: 15%;
+    background-color: rgb(50, 9, 88);
+    transition:  background-color 1s ease;
+}
+
+.card-paramount-app:hover{
+    width: 15%;
+    background-color: rgb(0, 100, 255);
+    transition:  background-color 1s ease;
+   
+}
+
+.card-paramount:hover{
+    border: rgb(255, 255, 255) 1px solid;
+}
+
+.card-prime-app:hover{
+    width: 15%;
+    background-color: rgb(0, 153, 255);
+    transition:  background-color 1s ease;
+}
+
+.card-prime:hover{
+    border: rgb(0, 0, 0) 1px solid;
+}
+
+.card-add-app:hover{
+    width: 15%;
+    background-color: rgb(124, 179, 26);
+    transition:  background-color 1s ease;
 }
