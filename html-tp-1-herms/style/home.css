@@ -1,5 +1,5 @@
 .scrolling-wrapper {
-    overflow-x: scroll;
+    overflow-x: visible;
     white-space: nowrap;
 }
 .card {
@@ -54,4 +54,31 @@
 .card-top-10 .card-title img {
     opacity: 1;
     /* transition: opacity 0.3s ease-in-out; */
+}
+
+/* carousel */
+.carousel-inner {
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    /* overflow-x: auto; */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+}
+
+.carousel-inner::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.card {
+    flex: 0 0 auto;
+    margin: 1px;
+    /* border: none; Optional: Remove card border if needed */
+    
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0; /* Remove rounded corners if not needed */
 }

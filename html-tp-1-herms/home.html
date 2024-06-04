@@ -93,28 +93,31 @@
     </div>
 
 <!-- aplicaciones -->
-    <div class="container-fluid mt-3">
-        <div class="scrolling-wrapper">
-            <div class="card col-sm-2 col-md-2 col-lg-2 col-xxl-2">
+<div class="container-fluid mt-3">
+    <div id="carousel-app" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner d-flex flex-nowrap overflow-auto">
+            <div class="card carousel-item p-0" style="width: 150px;">
                 <img src="img/apps/netflix.png" class="card-img-top rounded-3" alt="Netflix">
             </div>
-            <div class="card col-sm-2 col-md-2 col-lg-2 col-xxl-2">
+            <div class="card carousel-item p-0" style="width: 150px;">
                 <img src="img/apps/disney.jpg" class="card-img-top rounded-3" alt="Disney">
             </div>
-            <div class="card col-sm-2 col-md-2 col-lg-2 col-xxl-2">
+            <div class="card carousel-item p-0" style="width: 150px;">
                 <img src="img/apps/hbomax.jpg" class="card-img-top rounded-3" alt="HBO">
             </div>
-            <div class="card col-sm-2 col-md-2 col-lg-2 col-xxl-2">
+            <div class="card carousel-item p-0" style="width: 150px;">
                 <img src="img/apps/paramount.png" class="card-img-top rounded-3" alt="Paramount">
             </div>
-            <div class="card col-sm-2 col-md-2 col-lg-2 col-xxl-2">
+            <div class="card carousel-item p-0 active" style="width: 150px;">
                 <img src="img/apps/star.png" class="card-img-top rounded-3" alt="STAR">
             </div>
-            <div class="card col-sm-2 col-md-2 col-lg-2 col-xxl-2">
+            <div class="card carousel-item p-0" style="width: 150px;">
                 <img src="img/apps/agregar-producto.png" class="card-img-top rounded-3" alt="agregar app">
             </div>
         </div>
+        
     </div>
+</div>
 
     <!-- seccion continuar viendo -->
     <section class="container mt-4">
@@ -141,48 +144,71 @@
         </div>
     </section>
 
-     <!-- seccion top 10 -->
+     <!-- seccion top 10 - resolver con carousel en agrupaciones de 5 -->
      <section class="container mt-4">
         <h2 class="fw-bold exo-2">Top 10 de la semana</h2>
-        <div class="row">
+        <div class="row flex-nowrap" style="overflow-x:scroll">
             <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
                 <img src="img/peliculas series/hard-fie.png" class="card-img-top" alt="...">
                 <div class="card-body p-0 m-0">
-                  <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/hbo.png" class="" alt="disney"></p>
+                  <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/netflix.png" class="" style="width: 50%" alt="disney"></p>
                 </div>
             </div>
             
             <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
-                <img src="img/peliculas series/rambo.png" class="card-img-top" alt="...">
-                <div class="card-body p-0 m-0">
-                  <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/netflix.png" class="" alt="disney"></p>
-                </div>
-            </div>
-            <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
                 <img src="img/peliculas series/armageddon.png" class="card-img-top" alt="...">
                 <div class="card-body p-0 m-0">
-                  <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/hbo.png" class="" alt="disney"></p>
+                    <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/hbo.png" class=""    style="width: 50%" alt="disney"></p>
                 </div>
             </div>
             <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
                 <img src="img/peliculas series/anillos.png" class="card-img-top" alt="...">
                 <div class="card-body p-0 m-0">
-                  <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/hbo.png" class="" alt="disney"></p>
+                    <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/hbo.png" class=""    style="width: 50%" alt="disney"></p>
                 </div>
             </div>
             <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
                 <img src="img/peliculas series/johnwick.png" class="card-img-top" alt="...">
                 <div class="card-body p-0 m-0">
-                  <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/hbo.png" class="" alt="disney"></p>
+                    <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/hbo.png" class=""    style="width: 50%" alt="disney"></p>
+                </div>
+            </div>
+            <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
+                <img src="img/peliculas series/scars-face.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 m-0">
+                    <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/netflix.png" class=""   style="width: 50%"  alt="disney"></p>
+                </div>
+            </div>
+            <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
+                <img src="img/peliculas series/terminator-2.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 m-0">
+                    <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/hbo.png" class=""   style="width: 50%" alt="disney"></p>
                 </div>
             </div>
             <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
                 <img src="img/peliculas series/spiderman.png" class="card-img-top" alt="...">
                 <div class="card-body p-0 m-0">
-                  <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/disney-icon.png" class="" alt="disney"></p>
+                    <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/disney-icon.png" class=""  style="width: 50%"  alt="disney"></p>
                 </div>
             </div>
-            
+            <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
+                <img src="img/peliculas series/pulp-fiction.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 m-0">
+                    <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/netflix.png" class="" style="width: 50%"  alt="disney"></p>
+                </div>
+            </div>
+            <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
+                <img src="img/peliculas series/rambo.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 m-0">
+                  <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/netflix.png" class="" style="width: 50%" alt="disney"></p>
+                </div>
+            </div>
+            <div class="card card-top-10 col-2 pt-1 bg-dark hover-bg-black">
+                <img src="img/peliculas series/terminator-1.png" class="card-img-top" alt="...">
+                <div class="card-body p-0 m-0">
+                  <p class="card-title text-end pt-2 pb-0"><img src="./img/icon/hbo.png" class="" style="width: 50%" alt="disney"></p>
+                </div>
+            </div>
         </div>
     </section>
 
