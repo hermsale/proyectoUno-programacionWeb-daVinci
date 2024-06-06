@@ -16,10 +16,7 @@
   font-style: normal;
 }
 
-.hover-bg-black:hover {
-    /* border-color: white; */
-    border: 2px white solid;
-}
+
 
 
 
@@ -167,10 +164,11 @@
 /* botones del carousel top 10 */
 .carousel-control-prev,
 .carousel-control-next {
+    position: absolute;
     opacity: 0;
     transition: opacity 0.3s ease;
     width: 5%; /* Ajusta el tamaño del botón */
-
+    height: 98%;
     z-index: 9999;
 }
 
@@ -195,13 +193,19 @@
 }
 
 
-/* seccion seguir viendo */
+.hover-bg-black:hover {
+    border-color: white;
+}
+
+/* SECCION SEGUIR VIENDO /////////////////////////////////////////////// */
+/* seccion seguir viendo . se agranda al pasar por arriba*/
 .card-seguir-viendo:hover{
     transition: transform 0.3s ease, background-color 1s ease;
     transform: scale(1.08); 
     z-index: 100;
 }
 
+/* vuelve a su tamaño original */
 .card-seguir-viendo{
     transition: transform 0.3s ease, background-color 1s ease;
     transform: scale(1); 
