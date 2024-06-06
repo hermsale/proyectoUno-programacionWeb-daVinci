@@ -6,6 +6,7 @@
 .card {
     display: inline-block;
     margin-right: 10px; /* Ajusta el espacio entre las cards */
+    cursor: pointer;
 }
 
 /* fuente */
@@ -54,7 +55,60 @@
     /* transition: opacity 0.3s ease-in-out; */
 }
 
-/* carousel principal */
+
+.card-app__loading{
+    border-radius: 8px;
+    width: 100px; 
+    max-width: 150px;
+    height: 100px; 
+    max-height: 150px;
+    background-color: var(--blue-dark-1);
+    animation:  skelenton;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes skelenton{
+    0%{
+      background-color: var(--blue-dark-1);
+    }
+    50%{
+      background-color: var(--blue-dark-2);
+  
+    }
+    100%{
+      background-color: var(--blue-dark-1);
+    }
+  }
+
+/*  */
+/* test de como hacer un loading */
+.carousel-item-loading{
+    margin: 2px;
+    animation: gradientAnimation 3s infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        
+        background-color: #1a1a1a;
+    }
+    25% {
+        background-color: #616161;
+    }
+    50% {
+        background-color: #a7a7a7;
+    }
+    75% {
+        background-color: #dbdada;;
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+
+/* carousel principal ///////////////////////////////////////////////////////*/
 .carousel-inner {
     display: flex;
     white-space: nowrap;
@@ -82,17 +136,52 @@
 }
 
 /* aplicaciones fondo */
-.card-app{
+.card-app {
     width: 15%;
-    background-color: rgb(0, 0, 0,0 );
-    transition:  background-color 1s ease;
+    background-color: rgb(0, 0, 0, 0);
+    transition: background-color 1s ease;
     border: 0px;
     margin: 2px;
-
-
-    /* efecto al dejar de pasar por arriba de la card */
-    transition: transform 0.3s ease, background-color 1s ease;
+    position: relative; /* Para que .loading se posicione correctamente */
 }
+
+.card-app .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Asegura que esté encima de la imagen */
+}
+
+
+.card-app img{
+    display: none;
+}
+
+.card-app.loaded img {
+    display: block;
+}
+
+.card-app .loading::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border: 4px solid #ccc;
+    border-top-color: #000;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 .card-netflix-app:hover{
     width: 15%;
     background-color: rgb(255, 2, 12, 0.600);
