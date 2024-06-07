@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="/style/loading.css">
 
     <!-- fuente -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,8 @@
     <!-- icono -->
     <link rel="icon" href="./img/icon/icono-viendo-una-pelicula.png" type="image/x-icon">
 
-
+    <!-- scripts de loading -->
+    <script src="./scripts/loading.js"></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -97,17 +99,6 @@
 
 <!-- loading apps -->
    
-      <!-- <div class="container mt-3" >
-            <div class="d-flex flex-nowrap category-title__loading justify-content-center">
-                <div class="card-app__loading carousel-item-loading p-0 rounded-circle ">
-                </div>
-                <div class="card-app__loading carousel-item-loading rounded-circle p-0">
-                </div>
-                <div class="card-app__loading carousel-item-loading rounded-circle  p-0" >
-                </div>
-            </div>
-        </div> -->
-
 <!-- aplicaciones -->
 <!-- <div class="container-fluid mt-3 container-app">
     <div class="row">
@@ -136,29 +127,29 @@
 
 <div class="container-fluid mt-3 container-app">
     <div class="row" >
-        <div class="d-flex flex-nowrap overflow-auto">
+        <div class="d-flex div__card-app flex-nowrap overflow-auto justify-content-center ">
             <div class="card card-app card-netflix-app carousel-item p-0">
-                <div class="loading"></div>
+                <div class="card-app__loading col-2 carousel-item-loading"></div>
                 <img src="img/apps/netflix.png" class="card-img-top rounded-circle" alt="Netflix">
             </div>
             <div class="card card-app card-disney-app carousel-item p-0">
-                <div class="loading rounded-circle"></div>
+                <div class="card-app__loading col-2 carousel-item-loading"></div>
                 <img src="img/apps/disney.jpg" class="card-img-top rounded-circle" alt="Disney">
             </div>
             <div class="card card-app card-hbo-app carousel-item p-0">
-                <div class="loading"></div>
+                <div class="card-app__loading carousel-item-loading"></div>
                 <img src="img/apps/hbomax.png" class="card-img-top rounded-circle" alt="HBO">
             </div>
             <div class="card card-app card-paramount-app carousel-item p-0">
-                <div class="loading"></div>
+                <div class="card-app__loading carousel-item-loading"></div>
                 <img src="img/apps/paramount.png" class="card-img-top card-paramount rounded-circle" alt="Paramount">
             </div>
             <div class="card card-app card-prime-app carousel-item p-0">
-                <div class="loading"></div>
+                <!-- <div class="card-app__loading carousel-item-loading rounded-circle"></div> -->
                 <img src="img/apps/amazon-prime.png" class="card-img-top card-prime rounded-circle" alt="prime">
             </div>
             <div class="card card-app card-add-app carousel-item p-0">
-                <div class="loading"></div>
+                <!-- <div class="card-app__loading carousel-item-loading rounded-circle"></div> -->
                 <img src="img/apps/agregar-producto.png" class="card-img-top rounded-circle" alt="agregar app">
             </div>
         </div>
@@ -363,20 +354,6 @@
         </div>
     </section>
     <!-- bootstrap -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            setTimeout(function() {
-                var cards = document.querySelectorAll('.card-app');
-                cards.forEach(function(card) {
-                    card.classList.add('loaded');
-                    var loadingElement = card.querySelector('.loading');
-                    if (loadingElement) {
-                        loadingElement.style.display = 'none';
-                    }
-                });
-            }, 5000);
-        });
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

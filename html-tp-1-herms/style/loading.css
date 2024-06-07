@@ -1,0 +1,68 @@
+.card-app .loading {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Asegura que esté encima de la imagen */
+}
+
+/* quitamos la imagen del card que se carga */
+.card-app img{
+    display: none;
+}
+
+/* habilitamos la imagen luego de la carga */
+.card-app.loaded img {
+    display: block;
+}
+
+
+
+
+@keyframes gradientAnimation {
+    0% {
+        
+        background-color: #1a1a1a;
+    }
+    25% {
+        background-color: #616161;
+    }
+    50% {
+        background-color: #a7a7a7;
+    }
+    75% {
+        background-color: #dbdada;;
+    }
+    100% {
+        background-color: #ffffff;
+    }
+}
+
+/* se esta trabajando con los distintos tamaños de pantalla */
+/* pantalla pequeña */
+@media (max-width: 425px) {
+    .card-app__loading {
+        /* border-radius: 8px; */
+        height: 50px;
+        width: 50px;
+        /* animation: skelenton; */
+        animation: gradientAnimation 3s infinite;
+    }
+}
+/* @media(min-width:768px )and(max-width:1399px){ */
+@media (min-width: 426px) and (max-width: 768px) {
+    .card-app__loading {
+        /* border-radius: 8px; */
+        height: 100px;
+        width: 100px;
+        animation: gradientAnimation 3s infinite;
+        /* animation: skelenton; */
+    }
+}
