@@ -1,29 +1,110 @@
-.card-app .loading {
-    /* position: absolute; */
+
+#overlay {
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10; /* Asegura que esté encima de la imagen */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparente */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: none; /* Oculto por defecto */
 }
+
+/* la clase loading la agrego con JS */
+#carousel-principal.loading {
+        width: 100%;
+        /* 
+            Concepto de padding-top para mantener la relación de aspecto
+            Usamos el padding-top con un valor de % relativo, para que se incremente un porcentaje, en base a lo que se incremente el ancho
+            Ejemplo con relación de aspecto 16:9
+            La relación de aspecto 16:9 es comúnmente utilizada para videos y muchos elementos multimedia. Esta relación significa que por cada 16 unidades de ancho, hay 9 unidades de alto.
+             16:9 aspect ratio (9/16 * 100 = 56.25) 
+
+             yo pongo 45% que es la relacion que mas se ajusta al ancho de mi imagen
+         */
+         padding-top: 45%; 
+        animation: gradientAnimation 3s infinite;
+        position: relative; /* Necesario para el posicionamiento absoluto del contenido interno */
+}
+
+
 
 /* quitamos la imagen del card que se carga */
 .card-app img{
     display: none;
 }
-
+        
 /* habilitamos la imagen luego de la carga */
 .card-app.loaded img {
     display: block;
 }
+/* se esta trabajando con los distintos tamaños de pantalla */
+/* pantalla pequeña */
+@media (max-width: 425px) {
+    .card-app__loading {
+        /* border-radius: 8px; */
+        height: 45px;
+        width: 45px;
+        /* animation: skelenton; */
+        animation: gradientAnimation 3s infinite;
+    }
+
+}
+/* @media(min-width:768px )and(max-width:1399px){ */
+@media (min-width: 426px) and (max-width: 568px) {
+    .card-app__loading {
+        /* border-radius: 8px; */
+        height: 60px;
+        width: 60px;
+        animation: gradientAnimation 3s infinite;
+        /* animation: skelenton; */
+    }
+}
+
+@media (min-width: 569px) and (max-width: 767px) {
+    .card-app__loading {
+        /* border-radius: 8px; */
+        height: 80px;
+        width: 80px;
+        animation: gradientAnimation 3s infinite;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .card-app__loading {
+        /* border-radius: 8px; */
+        height: 110px;
+        width: 110px;
+        animation: gradientAnimation 3s infinite;
+    }
+}
 
 
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .card-app__loading {
+        /* border-radius: 8px; */
+        height: 150px;
+        width: 150px;
+        animation: gradientAnimation 3s infinite;
+    }
+}
+
+@media (min-width: 1441px) and (max-width: 1800px) {
+    .card-app__loading {
+        /* border-radius: 8px; */
+        height: 200px;
+        width: 200px;
+        animation: gradientAnimation 3s infinite;
+    }
+}
+
+@media (min-width: 1801px){
+        .card-app__loading {
+            height: 260px;
+            width: 260px;
+            animation: gradientAnimation 3s infinite;
+        }
+}
 
 
 @keyframes gradientAnimation {
@@ -42,27 +123,5 @@
     }
     100% {
         background-color: #ffffff;
-    }
-}
-
-/* se esta trabajando con los distintos tamaños de pantalla */
-/* pantalla pequeña */
-@media (max-width: 425px) {
-    .card-app__loading {
-        /* border-radius: 8px; */
-        height: 50px;
-        width: 50px;
-        /* animation: skelenton; */
-        animation: gradientAnimation 3s infinite;
-    }
-}
-/* @media(min-width:768px )and(max-width:1399px){ */
-@media (min-width: 426px) and (max-width: 768px) {
-    .card-app__loading {
-        /* border-radius: 8px; */
-        height: 100px;
-        width: 100px;
-        animation: gradientAnimation 3s infinite;
-        /* animation: skelenton; */
     }
 }

@@ -1,35 +1,41 @@
-// document.addEventListener("DOMContentLoaded", function() {
-//     setTimeout(function() {
-//         let cards = document.querySelectorAll('.card-app');
-//         cards.forEach(function(card) {
-//             card.classList.add('loaded');
-//             var loadingElement = card.querySelector('.card-app__loading');
-//             if (loadingElement) {
-//                 loadingElement.style.display = 'none';
-//             }
-//         });
-//     }, 2000);
-// });
-
+// carga de aplicaciones
 document.addEventListener("DOMContentLoaded", function() {
-    // Selecciona todas las tarjetas con la clase 'card-app'
     let cards = document.querySelectorAll('.card-app');
-
-    // Remover clases innecesarias al inicio
-    // cards.forEach(function(card) {
-        // card.classList.remove('loaded');
-    // });
-
-    // Después de un retraso de 2000ms (2 segundos)
     setTimeout( () =>{
         cards.forEach( (card) => {
             // Agrega la clase 'loaded' para cada tarjeta
             card.classList.add('loaded');
             // Oculta el elemento de carga si existe
-            var loadingElement = card.querySelector('.card-app__loading');
+            let loadingElement = card.querySelector('.card-app__loading');
             if (loadingElement) {
                 loadingElement.style.display = 'none';
             }
         });
     }, 3000);
+});
+
+
+// loading carousel - tambien se agrego un temporizador para que la pagina quede no disponible mientras se carga todo
+document.addEventListener('DOMContentLoaded', () => {
+    const carouselLoading = document.querySelector('#carousel-principal');
+    // seleccionamos al #carousel-principal y al .carousel-inner
+    const carouselInner = document.querySelector('#carousel-principal .carousel-inner');
+
+    // Agregamos un temporizador para que la pagina quede no disponible mientras se carga todo
+    const overlay = document.getElementById('overlay');
+    overlay.style.display = 'block';
+
+    // indicamos que el display de los elementos seleccionados en el querySelector. sea none
+    carouselInner.style.display = 'none';
+    // Agregar la clase 'loading' para indicar que está cargando
+    carouselLoading.classList.add("loading");
+    // Esperar 3 segundos antes de quitar la clase 'loading' y mostrar el .carousel-inner
+    setTimeout(() =>{
+        // una vez que pasan 3 segundos eliminamos del carousel-principal la clase 'loading'
+        carouselLoading.classList.remove("loading");
+        // y mostramos el .carousel-inner
+        carouselInner.style.display = 'block';
+        // quitamos el overlay
+        overlay.style.display = 'none';
+    }, 3000);  // 3000 milisegundos = 3 segundos
 });

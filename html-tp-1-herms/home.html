@@ -26,6 +26,9 @@
     <title>Home</title>
 </head>
 <body>
+    <!-- creamos este overlay para que por unos segundos no se pueda interactuar con la pagina mientras se carga la misma -->
+    <div id="overlay"></div>
+    
     <header>
         <nav class="nav__menu">                
             <!-- menu peliculas -->
@@ -77,6 +80,7 @@
 <!-- carousel -->
     <div class="container mt-5">
         <div id="carousel-principal" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div class="carousel-loading"></div> -->
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./img/carousel/jurassicworld.png" class="d-block w-100" alt="jurassicworld">
@@ -97,59 +101,30 @@
           </div>
     </div>
 
-<!-- loading apps -->
-   
 <!-- aplicaciones -->
-<!-- <div class="container-fluid mt-3 container-app">
-    <div class="row">
-        <div class="d-flex flex-nowrap overflow-auto">
-            <div class="card card-app card-netflix-app carousel-item p-0">
-                <img src="img/apps/netflix.png" class="card-img-top rounded-circle" alt="Netflix">
-            </div>
-            <div class="card card-app card-disney-app carousel-item p-0">
-                <img src="img/apps/disney.jpg" class="card-img-top rounded-circle" alt="Disney">
-            </div>
-            <div class="card card-app card-hbo-app carousel-item p-0">
-                <img src="img/apps/hbomax.png" class="card-img-top rounded-circle" alt="HBO">
-            </div>
-            <div class="card card-app card-paramount-app carousel-item p-0">
-                <img src="img/apps/paramount.png" class="card-img-top card-paramount rounded-circle" alt="Paramount">
-            </div>
-            <div class="card card-app card-prime-app carousel-item p-0">
-                <img src="img/apps/amazon-prime.png" class="card-img-top card-prime rounded-circle" alt="prime">
-            </div>
-            <div class="card card-app card-add-app carousel-item p-0">
-                <img src="img/apps/agregar-producto.png" class="card-img-top rounded-circle" alt="agregar app">
-            </div>
-        </div>
-    </div>
-</div> -->
-
 <div class="container-fluid mt-3 container-app">
     <div class="row" >
         <div class="d-flex div__card-app flex-nowrap overflow-auto justify-content-center ">
             <div class="card card-app card-netflix-app carousel-item p-0">
-                <div class="card-app__loading col-2 carousel-item-loading"></div>
+                <div class="card-app__loading col-2 rounded-circle"></div>
                 <img src="img/apps/netflix.png" class="card-img-top rounded-circle" alt="Netflix">
             </div>
             <div class="card card-app card-disney-app carousel-item p-0">
-                <div class="card-app__loading col-2 carousel-item-loading"></div>
+                <div class="card-app__loading col-2  rounded-circle"></div>
                 <img src="img/apps/disney.jpg" class="card-img-top rounded-circle" alt="Disney">
             </div>
             <div class="card card-app card-hbo-app carousel-item p-0">
-                <div class="card-app__loading carousel-item-loading"></div>
+                <div class="card-app__loading rounded-circle"></div>
                 <img src="img/apps/hbomax.png" class="card-img-top rounded-circle" alt="HBO">
             </div>
             <div class="card card-app card-paramount-app carousel-item p-0">
-                <div class="card-app__loading carousel-item-loading"></div>
+                <div class="card-app__loading rounded-circle"></div>
                 <img src="img/apps/paramount.png" class="card-img-top card-paramount rounded-circle" alt="Paramount">
             </div>
             <div class="card card-app card-prime-app carousel-item p-0">
-                <!-- <div class="card-app__loading carousel-item-loading rounded-circle"></div> -->
                 <img src="img/apps/amazon-prime.png" class="card-img-top card-prime rounded-circle" alt="prime">
             </div>
             <div class="card card-app card-add-app carousel-item p-0">
-                <!-- <div class="card-app__loading carousel-item-loading rounded-circle"></div> -->
                 <img src="img/apps/agregar-producto.png" class="card-img-top rounded-circle" alt="agregar app">
             </div>
         </div>
