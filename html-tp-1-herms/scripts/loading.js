@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // loading carousel - tambien se agrego un temporizador para que la pagina quede no disponible mientras se carga todo
 document.addEventListener('DOMContentLoaded', () => {
+    
     const carouselLoading = document.querySelector('#carousel-principal');
     // seleccionamos al #carousel-principal y al .carousel-inner
     const carouselInner = document.querySelector('#carousel-principal .carousel-inner');
@@ -24,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Agregamos un temporizador para que la pagina quede no disponible mientras se carga todo
     const overlay = document.getElementById('overlay');
     overlay.style.display = 'block';
-
     // indicamos que el display de los elementos seleccionados en el querySelector. sea none
     carouselInner.style.display = 'none';
     // Agregar la clase 'loading' para indicar que está cargando
@@ -39,3 +39,27 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.style.display = 'none';
     }, 3000);  // 3000 milisegundos = 3 segundos
 });
+
+// seguir viendo 
+document.addEventListener('DOMContentLoaded', () => {
+    // esto hay que ocultarlo al principio y mostrarlo al final
+    let cardsSeguirViendo = document.querySelectorAll('.card-seguir-viendo');
+    let cardsSeguirViendoImg = document.querySelectorAll('.card-seguir-viendo img');
+    
+    // Mostrar las tarjetas después de 3 segundos
+    cardsSeguirViendo.forEach((cardSeguir)=>{
+        cardSeguir.classList.add('loaded');
+    });
+    
+    setTimeout(() => {
+        cardsSeguirViendoImg.forEach((cardImg) => {
+            cardImg.classList.remove('loaded');
+            cardImg.style.display = 'block';
+            // let loadingElement = card.querySelector('.card-seguir-viendo__loading');
+            // if(loadingElement){
+            //     loadingElement.style.display = 'none';
+            // }
+        });
+    }, 3000);
+});
+
