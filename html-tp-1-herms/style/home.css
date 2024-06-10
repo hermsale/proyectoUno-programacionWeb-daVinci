@@ -3,7 +3,8 @@
     overflow-x: visible;
     white-space: nowrap;
 }
-.card {
+
+.card{
     display: inline-block;
     margin-right: 10px; /* Ajusta el espacio entre las cards */
     cursor: pointer;
@@ -23,9 +24,14 @@
     transition: opacity 0.8s ease-in-out; /* Animación suave para aparecer/desaparecer */
 }
 
+.p__cardSeguirViendo--img{
+    display: flex;
+    justify-content: end;
+}
+
 
 /* colocamos el icono en el margen inferior derecho cuando hacemos hover */
-.card {
+.card{
     position: relative;
     overflow: hidden; /* Asegura que los elementos hijos no se salgan del contenedor */
 }
@@ -34,6 +40,7 @@
     bottom: 0;
     right: 8px;
     padding: 10px;
+    
 }
 .card-body .card-title img {
     opacity: 0;
@@ -86,10 +93,12 @@
     width: 15%;
     background-color: rgb(0, 0, 0, 0);
     transition: background-color 1s ease;
+    transition: transform 0.3s ease, background-color 1s ease, backdrop-filter 1s ease;
     border: 0px;
     /* margin: 2px; */
     position: relative; /* Para que .loading se posicione correctamente */
 }
+
 
 .div__card-app{
     width: 100%;

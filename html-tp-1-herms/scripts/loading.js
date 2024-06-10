@@ -44,21 +44,19 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     // esto hay que ocultarlo al principio y mostrarlo al final
     let cardsSeguirViendo = document.querySelectorAll('.card-seguir-viendo');
-    let cardsSeguirViendoImg = document.querySelectorAll('.card-seguir-viendo img');
-    
-    // Mostrar las tarjetas después de 3 segundos
-    cardsSeguirViendo.forEach((cardSeguir)=>{
-        cardSeguir.classList.add('loaded');
-    });
+
+    // esto hay que mostrarlo al principio
+    let cardsSeguirViendoLoading = document.querySelectorAll('.card-seguir-viendo__loading');
     
     setTimeout(() => {
-        cardsSeguirViendoImg.forEach((cardImg) => {
-            cardImg.classList.remove('loaded');
-            cardImg.style.display = 'block';
-            // let loadingElement = card.querySelector('.card-seguir-viendo__loading');
-            // if(loadingElement){
-            //     loadingElement.style.display = 'none';
-            // }
+        cardsSeguirViendo.forEach((cardImg) => {
+            // esto me muestra la imagen despues de cargado
+            cardImg.classList.add('loaded');
+        });
+
+        cardsSeguirViendoLoading.forEach((cardLoading)=>{
+            // luego de cargado aplico un display none
+            cardLoading.style.display = 'none';
         });
     }, 3000);
 });

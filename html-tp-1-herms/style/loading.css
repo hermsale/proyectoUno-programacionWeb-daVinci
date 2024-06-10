@@ -38,7 +38,7 @@
  */
 .card-loading{
     width: 100%;
-    padding-top: 100%; 
+    padding-top: 10%; 
     animation: gradientAnimation 3s infinite;
     position: relative; /* Necesario para el posicionamiento absoluto del contenido interno */
 }
@@ -60,11 +60,15 @@
     /* height: 200px; */
 }
 
-.card-seguir-viendo.loaded{
-    display: block;
-    height: 450px;
+.card-seguir-viendo__loading{
     padding-top: 100%; 
+    width: 100%;
+    /* animation: skelenton; */
     animation: gradientAnimation 3s infinite;
+}
+
+.card-seguir-viendo.loaded img{
+    display: block;
 }
 
 /* aplicaciones  */
