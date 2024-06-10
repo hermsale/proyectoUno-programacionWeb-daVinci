@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     // esto hay que ocultarlo al principio y mostrarlo al final
     let cardsSeguirViendo = document.querySelectorAll('.card-seguir-viendo');
+    let cards = document.querySelectorAll('.card-top-10 img');
 
     // esto hay que mostrarlo al principio
     let cardsSeguirViendoLoading = document.querySelectorAll('.card-seguir-viendo__loading');
@@ -52,6 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
         cardsSeguirViendo.forEach((cardImg) => {
             // esto me muestra la imagen despues de cargado
             cardImg.classList.add('loaded');
+        });
+
+        cards.forEach((card) =>{
+            // card.classList.add('loaded');
+            // card.classList.style =
         });
 
         cardsSeguirViendoLoading.forEach((cardLoading)=>{
