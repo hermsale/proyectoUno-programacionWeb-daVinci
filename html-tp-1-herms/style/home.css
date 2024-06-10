@@ -88,17 +88,47 @@
     border-radius: 0; /* Remove rounded corners if not needed */
 }
 
+/* efectos de los card seguir viendo */
+.card-seguir-viendo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Para asegurar que el contenido respete los bordes redondeados */
+  }
+
+  .card-seguir-viendo:hover {
+    transform: scale(1.05); /* Efecto de escala */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+  }
+
+/* top 10 efectos */
+  .card-top-10 {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 15px; /* Bordes redondeados */
+        overflow: hidden; /* Para asegurar que el contenido respete los bordes redondeados */
+      }
+
+      .card-top-10:hover {
+        transform: scale(1); /* Efecto de escala */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra al pasar el cursor */
+      }
+      
 /* aplicaciones fondo */
 .card-app {
     width: 15%;
     background-color: rgb(0, 0, 0, 0);
-    transition: background-color 1s ease;
+    /* transition: background-color 1s ease; */
     transition: transform 0.3s ease, background-color 1s ease, backdrop-filter 1s ease;
     border: 0px;
     /* margin: 2px; */
     position: relative; /* Para que .loading se posicione correctamente */
 }
 
+.card-app:hover{
+    background-color: rgba(0, 48, 62, 0.6); /* Cambia el color de fondo */
+    backdrop-filter: blur(10px); /* Efecto de difuminado */
+    transform: scale(0.9); /* Efecto de escala */
+    box-shadow: 0 0 20px 10px rgba(10, 10, 10, 0.6);
+}
 
 .div__card-app{
     width: 100%;
@@ -122,6 +152,7 @@
     /* efecto escala */
     transition: transform 0.3s ease, background-color 1s ease;
     transform: scale(0.9); 
+    
 }
 
 .card-hbo-app:hover{

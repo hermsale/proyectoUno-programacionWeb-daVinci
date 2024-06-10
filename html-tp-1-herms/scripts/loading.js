@@ -44,10 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     // esto hay que ocultarlo al principio y mostrarlo al final
     let cardsSeguirViendo = document.querySelectorAll('.card-seguir-viendo');
+
     let cards = document.querySelectorAll('.card-top-10 img');
 
+    // muestro el card loading en el top 10
+    let top10__loading = document.querySelectorAll('.card-app__loading');
     // esto hay que mostrarlo al principio
     let cardsSeguirViendoLoading = document.querySelectorAll('.card-seguir-viendo__loading');
+
+    cards.forEach((card)=>{
+        card.style.display='none';
+    })
     
     setTimeout(() => {
         cardsSeguirViendo.forEach((cardImg) => {
@@ -55,10 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
             cardImg.classList.add('loaded');
         });
 
-        cards.forEach((card) =>{
-            // card.classList.add('loaded');
-            // card.classList.style =
+        top10__loading.forEach((card) =>{
+            card.style.display = 'none';
         });
+
+        cards.forEach((card)=>{
+            card.style.display='block';
+        })
 
         cardsSeguirViendoLoading.forEach((cardLoading)=>{
             // luego de cargado aplico un display none
