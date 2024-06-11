@@ -1,0 +1,17 @@
+[
+    {
+      "titulo": "Spider Man",
+      "descripcion": "Una película sobre el superhéroe Spider-Man.",
+      "foto": "img/peliculas series/spiderman.png"
+    },
+    {
+      "titulo": "Rambo",
+      "descripcion": "Un exsoldado toma justicia por su cuenta.",
+      "foto": "img/peliculas series/rambo.png"
+    },
+    {
+      "titulo": "Armageddon",
+      "descripcion": "Un equipo intenta salvar la Tierra de un asteroide.",
+      "foto": "img/peliculas series/armageddon.png"
+    }
+  ]
