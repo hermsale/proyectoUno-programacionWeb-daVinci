@@ -2,69 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style/index.css">
+     <!-- bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+     <!-- fuente -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     
+         <link rel="stylesheet" href="./style/index.css">
+         <link rel="stylesheet" href="/style/loading.css">
+         <!-- icono -->
+         <link rel="icon" href="./img/icon/icono-viendo-una-pelicula.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Selección de perfil</title>
 </head>
 <body>
-    <header>
-        <form action="https://www.google.com/search" method="GET">
-            <!-- <input type="text" id="q" name="q" required> -->
-            <input type="submit" value="Buscar">
-        </form>
 
-        <nav class="navbar">
-            <ul>
-                <li><a href="categorias.html">Categorias</a></li>
-                <li><a href="pagina2.html">Pelicula</a></li>
-                <li><a href="registro.html">Registro</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-        <h1>Home</h1>
-    </header>
-
-    <section class="section__carousel">
-        
-        <div class="slides">
-            <div class="slide">
-                <img src="./img/fast-furious.jpg" alt="rapido y furioso">
+    <div class="container">
+        <h1 class=" m-5 text-center display-1">¿Quién está viendo?</h1>
+        <div class="row justify-content-center">
+            <div class="col-6 col-md-3 profile" id="alejandro-profile">
+                <img src="./img/navbar/usuario.png" alt="Perfil Alejandro" class="profile-alejandro img-fluid">
+                <div class="profile-name text-center profile-alejandro">Alejandro</div>
             </div>
-            <div class="slide">
-                <img src="./img/pulp-fiction.jpg" alt="pulp fuction">
+            <div class="col-6 col-md-3 profile">
+                <img src="./img/navbar/masPerfil.png" alt="Añadir perfil" class="img-fluid">
+                <div class="profile-name text-center">Añadir perfil</div>
             </div>
-            <div class="slide">
-                <img src="./img/duro-de-matar.jpg" alt="duro de matar">
-            </div>
-            <div class="slide">
-                <img src="./img/terminator-1.jpg" alt="terminator 1">
-            </div>   
-            <div class="slide">
-                <img src="./img/rambo-2.jpg" alt="rambo 2">
-            </div>   
-            <div class="slide">
-                <img src="./img/scars-face.jpg" alt="scar face">
-            </div>   
         </div>
-    </section>
+    </div>
 
-    <section class="section__img--peliculas">
-        <div class="div__section--home">
-            <img src="./img/fast-furious.jpg" alt="rapido y furioso">
-            <img src="./img/rambo-2.jpg" alt="rambo 2">
-            <img src="./img/terminator-2.jpg" alt="terminator 2">
-        </div>
-    </section>
-    <footer>
-        <p class="p__footer">
-            ¿Preguntas? Llama al 0800 345 1111
-            Preguntas frecuentes
-            Centro de ayuda
-            Cuenta
-            Términos de uso
-            Privacidad
-            Contáctanos
-        </p>
-    </footer>
+
+    <script src="./scripts/redirect.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>

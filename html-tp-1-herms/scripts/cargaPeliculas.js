@@ -16,14 +16,13 @@ const peliculas = `[
     }
   ]`
 
-
-const jsonData = JSON.parse(peliculas);
-console.log(jsonData[0].titulo);
+// guardamos en data el contenido parsiado de peliculas json 
+const data = JSON.parse(peliculas);
 // Obtener el contenedor donde se agregarán las tarjetas de películas
 const contenedorPeliculas = document.getElementById('div__seguirViendo');
 
 // Iterar sobre cada película en el archivo JSON
-jsonData.forEach(pelicula => {
+data.forEach(pelicula => {
   // Generar la estructura HTML de la tarjeta de película
   const tarjetaHTML = `
     <div class="card card-seguir-viendo col-3 p-0">

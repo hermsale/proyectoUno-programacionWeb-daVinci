@@ -1,113 +1,29 @@
-/* reseteamos el font size para que rem trabaje con un equivalente a 10 px = 1 rem  */
-html{
-    /* tamaño letra */
-    font-size: 62.5%;
-}    
-
-/* reseteamos el margin y padding de todos los elementos */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Incluye el padding y el border en el ancho y alto del elemento */
-}
-
-/* establezco estilos básicos para el body */
-body{
-    font-family: Arial, sans-serif;
-    background-color: rgba(61, 60, 60, 0.637);
-}    
-
-/* FORMATEO TEXTOS*/
-h1{
-    font-size: 4rem;
-}
-
-h2{
-    font-size: 3rem;
-}
-
-a{
-    font-size: 1.5rem;
-}
-
-p{
-    font-size: 2rem;
-}
-
-.p__footer{
-    font-size: 2em;
+body {
+    background-color: #141414;
+    color: white;
     text-align: center;
+    padding-top: 50px;
 }
-
-/************************************************************** */
-
-/*******************************************************************  */
-.section__img--peliculas{
-    width: 100%;
-}    
-
-.div__section--home{
-    display: flex;
-    justify-content: center;
-}     
-/* 
-img{
-    width: 30%;
-    margin: 0.5em;
-    max-width: 44em;
-    max-height: 50em;
-}     */
-
-
-#pelicula-principal{
-    margin: auto;
-    width: 60em;
-    height: 70em;
-}    
-
-.div__img--peliculas-recomendadas{
-    display: flex;
-    justify-content: flex-start;
-}
-
-.div__img--pelicula{
-    display: flex;
-    background-color: rgb(146, 146, 146);
-}    
-
-/* decorado de cuando paso por arriba del elemento */
-.section__img--peliculas img:hover{
-    border:0.2em solid red;
-}    
-
-#pelicula-principal:hover{
-    border:2px solid rgb(255, 255, 255);
-}    
-
-/* laptop 1440 width */
-/* CAROUSEL //////////////////////////////////////////////////////////// */
-.section__carousel {
-    margin: 0 auto;
-    width: 70%;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  .slides {
-    display: flex;
-    width: 400%; /* Ancho total = número de slides * 100% */
-    animation: carousel-animation 12s infinite; /* 3 segundos por slide, 4 slides en total */
-  }
-  
-  .slide {
-    flex: 0 0 50%; /* Cada slide ocupa el 25% del contenedor (4 slides en total) */
-  }
-  
-  @keyframes carousel-animation {
-      0% { transform: translateX(0); } /* Inicio de la animación */
-      20%, 25% { transform: translateX(0); } /* Evita un desplazamiento brusco al inicio */
-      45%, 50% { transform: translateX(-100%); } /* Slide 2 */
-      70%, 75% { transform: translateX(-200%); } /* Slide 3 */
+.profile {
+    margin: 20px;
     }
 
+.profile img {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    transition: transform 0.3s;
+}
+.profile img:hover {
+    transform: scale(1.1);
+}
+.profile-name {
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 2.5rem; /* Ajusta el tamaño de fuente aquí */
+}
+.profile img:hover {
+    background: linear-gradient(45deg, #292929, #959493);
+    /* Otros estilos necesarios para que el gradiente se aplique correctamente */
+}
