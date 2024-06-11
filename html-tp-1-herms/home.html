@@ -19,8 +19,7 @@
     <!-- icono -->
     <link rel="icon" href="./img/icon/icono-viendo-una-pelicula.png" type="image/x-icon">
 
-    <!-- scripts de loading -->
-    <script src="./scripts/loading.js"></script>
+   
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
@@ -135,8 +134,8 @@
     <!-- seccion continuar viendo -->
     <section class="container mt-4">
         <h1 class="fw-bold exo-2 fs-1 fs-md-4 fs-lg-5">Seguir viendo</h1>
-        <div class="row">
-            <div class="card card-seguir-viendo col-3 p-0">
+        <div class="row" id="div__seguirViendo">
+            <!-- <div class="card card-seguir-viendo col-3 p-0">
                 <div class="card-seguir-viendo__loading"></div>
                 <img src="img/peliculas series/spiderman.png" class="card-img-top" alt="...">
                 <div class="card-body p-0 m-0">
@@ -156,7 +155,7 @@
                 <div class="card-body p-0 m-0">
                     <p class="card-title p__cardSeguirViendo--img"><img src="./img/icon/hbo.png" class="" style="width: 40%" alt="disney"></p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -345,6 +344,11 @@
                 </div>
         </div>
     </section>
+
+     <!-- scripts de loading -->
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script src="./scripts/loading.js"></script>
+     <script src="./scripts/cargaPeliculas.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
