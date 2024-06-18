@@ -1,0 +1,17 @@
+/* reseteamos el font size para que rem trabaje con un equivalente a 10 px = 1 rem  */
+html{
+    /* tamaño letra */
+    font-size: 62.5%;
+}    
+
+/* reseteamos el margin y padding de todos los elementos */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye el padding y el border en el ancho y alto del elemento */
+}
+
+/* establezco estilos básicos para el body */
+body{
+    background-color: rgba(61, 60, 60, 0.637);
+}    
