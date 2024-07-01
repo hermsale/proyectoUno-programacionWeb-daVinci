@@ -16,3 +16,15 @@ body {
 .category-card:hover {
     transform: scale(1.05);
 }
+
+/* fuente */
+.exo-2{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+
+h3{
+  font-size: 1rem;
+}
