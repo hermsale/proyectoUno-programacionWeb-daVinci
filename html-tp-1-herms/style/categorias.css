@@ -1,3 +1,11 @@
+
+/* reseteamos el margin y padding de todos los elementos */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Incluye el padding y el border en el ancho y alto del elemento */
+}
+
 body {
   background-color: black; /* Fondo negro */
   color: white; /* Texto blanco */

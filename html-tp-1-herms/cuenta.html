@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style/index.css">
-
+     
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
@@ -22,37 +21,77 @@
         <!-- icono -->
         <link rel="icon" href="./img/icon/icono-viendo-una-pelicula.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+
+    <title>Cuenta</title>
 </head>
 <body>
-    <!-- barra de navegacion -->
+ <!-- barra de navegacion -->
+ <header>
+    <nav class="nav__menu">                
+        <!-- menu peliculas -->
+        <ul class="menu menu__left--desplegado">
+            <li class="exo-2"><a href="home.html">Inicio</a></li>
+            <li class="exo-2"><a href="peliculas.html">Peliculas</a></li>
+            <li class="exo-2"><a href="404.html">Series</a></li>
+            <li class="exo-2"><a href="categorias.html">Categorias</a></li>                
+        </ul>
 
-    <header class="bg-dark p-3">
-        <div class="container d-flex justify-content-start">
-            <button type="button" class="btn btn-secondary" onclick="window.history.back();">
-                Volver
-            </button>
-        </div>
-    </header>
-    
+        <ul class="menu menu__left--hamburguesa">
+            <li><a href="#"><img class="img__icono--hamburguesa" src="./img/navbar/menu.png" alt="menu"></a>
+                <ul class="submenu submenu__left">
+                    <li class="exo-2"><a href="home.html">Inicio</a></li>
+                    <li class="exo-2"><a href="peliculas.html">Peliculas</a></li>
+                    <!-- <li><a href="#">Series</a></li>  -->
+                    <li class="exo-2"><a href="categorias.html">Categorias</a></li> 
+                </ul>
+            </li>    
+        </ul>
+
+        <!-- menu usuario -->
+        <ul class="menu menu__right--desplegado">
+            <li class="menu__right--lupa"><img class="img__right--lupa" src="./img/navbar/lupa.png" alt="menu"></li>
+                <li class="li__usuario"><h3 class="me-2 exo-2">Alejandro</h3><a href="#"><img class="img__right--usuario" src="./img/navbar/usuario.png" alt="menu"></a>
+                    <ul class="submenu submenu__right">
+                        <!-- <li class="exo-2"><a href="#">Cuenta y configuración</a></li> -->
+                        <li class="exo-2"><a href="contacto.html">Ayuda</a></li> 
+                        <li class="exo-2"><a href="./index.html">Perfiles</a></li> 
+                        <!-- <li class="exo-2"><a href="#">Cerrar sesión</a></li> -->
+                    </ul>
+                </li> 
+        </ul>            
+        
+        <ul class="menu menu__right--hamburguesa">
+            <li class="menu__right--lupa"><img class="img__right--lupa" src="./img/navbar/lupa.png" alt="menu"></li>
+            <li><a href="#"><img class="img__right--usuario" src="./img/navbar/usuario.png" alt="menu"></a>
+                <ul class="submenu submenu__right">
+                    <li class="exo-2"><a href="#">Alejandro</a></li>
+                    <li class="exo-2"><a href="#">Cuenta y configuración</a></li>
+                    <li class="exo-2"><a href="contacto.html">Ayuda</a></li> 
+                    <li class="exo-2"><a href="./index.html">Perfiles</a></li> 
+                    <!-- <li class="exo-2"><a href="#">Cerrar sesión</a></li> -->
+                </ul>
+            </li> 
+        </ul>
+    </nav>
+</header>
 <section class="section__formulario">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <div class="card">
                     <div class="card-header">
-                        <h4 class="mb-0">Agregar Perfil</h4>
+                        <h4 class="mb-0">Modificar Perfil</h4>
                     </div>
                     <div class="card-body">
                         <form action="/submit-your-form-handler" method="POST">
                             <div class="form-group">
                                 <label for="profile_name">Nombre del Perfil:</label>
-                                <input type="text" class="form-control" id="profile_name" name="profile_name" required>
+                                <input type="text" class="form-control" id="profile_name" name="profile_name" value="Alejandro" required>
                             </div>
                             <div class="form-group">
                                 <label for="avatar">Seleccionar Avatar:</label>
                                 <select class="form-control" id="avatar" name="avatar" required>
-                                    <option value="avatar1">Avatar 1</option>
+                                    <option value="avatar1" selected>Avatar 1</option>
                                     <option value="avatar2">Avatar 2</option>
                                     <option value="avatar3">Avatar 3</option>
                                     <!-- Agregar más opciones de avatar según sea necesario -->
@@ -63,18 +102,17 @@
                                 <select class="form-control" id="age_group" name="age_group" required>
                                     <option value="kids">Niños</option>
                                     <option value="teens">Adolescentes</option>
-                                    <option value="adults">Adultos</option>
+                                    <option value="adults" selected>Adultos</option>
                                 </select>
                             </div>
                             <div class="form-group">
                                 <label for="parental_controls">Controles Parentales:</label>
                                 <select class="form-control" id="parental_controls" name="parental_controls" required>
-                                    <option value="enabled">Habilitado</option>
+                                    <option value="enabled" selected>Habilitado</option>
                                     <option value="disabled">Deshabilitado</option>
                                 </select>
                             </div>
                             <div class="form-group text-center mt-2">
-                                <button type="reset" class="btn btn-secondary">Limpiar</button>
                                 <button type="submit" class="btn btn-primary">Guardar Perfil</button>
                             </div>
                         </form>
@@ -84,7 +122,9 @@
         </div>
     </div>
 </section>
-      <footer>
+
+    
+    <footer>
         <p class="p__footer">
             ¿Preguntas? Llama al 0800 345 1111
             Preguntas frecuentes
@@ -95,5 +135,8 @@
             Contáctanos
         </p>
     </footer>
+
+     <!-- bootstrap -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
