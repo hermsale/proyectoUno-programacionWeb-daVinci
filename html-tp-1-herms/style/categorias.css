@@ -1,7 +1,10 @@
-/* categoria page */
-.section__categoria{
-    position:relative;
-    top: 50px; /* Mueve la sección 514px desde el borde superior */
-    margin-bottom: 75px;
-  }
-  
+body {
+  background-color: black; /* Fondo negro */
+  color: white; /* Texto blanco */
+}
+  .category-card {
+    transition: transform 0.2s;
+}
+.category-card:hover {
+    transform: scale(1.05);
+}

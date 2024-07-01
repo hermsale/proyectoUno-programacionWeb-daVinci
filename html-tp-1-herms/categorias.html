@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/navbar.css">
     <link rel="stylesheet" href="/style/categorias.css">
+
+    <!-- fuente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- icono -->
+    <link rel="icon" href="./img/icon/icono-viendo-una-pelicula.png" type="image/x-icon">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Categorias</title>
 </head>
@@ -17,7 +26,7 @@
             <!-- menu peliculas -->
             <ul class="menu menu__left--desplegado">
                 <li><a href="home.html">Inicio</a></li>
-                <li><a href="pelicula.html">Peliculas</a></li>
+                <li><a href="peliculas.html">Peliculas</a></li>
                 <!-- <li><a href="#">Series</a></li> proximamente -->
                 <li><a href="categorias.html">Categorias</a></li>                
             </ul>
@@ -61,26 +70,77 @@
         </nav>
     </header>
 
-    <section class="section__categoria">
-        <div>
-            <img src="./img/fast-furious.jpg" alt="rapido y furioso">
-            <img src="./img/rambo-2.jpg" alt="rambo 2">
+    <div class="container mt-5">
+        <h1 class="mb-4 text-center">Categorías de Películas</h1>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card category-card">
+                    <img src="img/netflix/pelicula-dia-john-wicj.png" class="card-img-top" alt="Acción">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Acción</h5>
+                        <p class="card-text">Explora las mejores películas de acción llenas de adrenalina y emocionantes escenas de combate.</p>
+                        <a href="accion.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card category-card  bg-dark">
+                    <img src="img/categorias/uncharted.png" class="card-img-top" alt="Comedia">
+                    <div class="card-body">
+                        <h5 class="card-title">Aventura</h5>
+                        <p class="card-text">Disfruta de una selección de películas cómicas que te harán reír a carcajadas.</p>
+                        <a href="comedia.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card category-card  bg-dark">
+                    <img src="img/categorias/american-pie-2.png" class="card-img-top" alt="Drama">
+                    <div class="card-body">
+                        <h5 class="card-title">Comedia</h5>
+                        <p class="card-text">Disfruta de una selección de películas cómicas que te harán reír a carcajadas. Desde comedias clásicas hasta las más nuevas, estas películas están garantizadas para mejorar tu estado de ánimo.</p>
+                        <a href="drama.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards as needed -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card category-card">
+                    <img src="img/netflix/pelicula-dia-john-wicj.png" class="card-img-top" alt="Acción">
+                    <div class="card-body bg-dark">
+                        <h5 class="card-title">Drama</h5>
+                        <p class="card-text">Explora las mejores películas de acción llenas de adrenalina y emocionantes escenas de combate.</p>
+                        <a href="accion.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card category-card  bg-dark">
+                    <img src="img/categorias/uncharted.png" class="card-img-top" alt="Comedia">
+                    <div class="card-body">
+                        <h5 class="card-title">Ciencia Ficción</h5>
+                        <p class="card-text">Disfruta de una selección de películas cómicas que te harán reír a carcajadas.</p>
+                        <a href="comedia.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card category-card  bg-dark">
+                    <img src="img/categorias/american-pie-2.png" class="card-img-top" alt="Drama">
+                    <div class="card-body">
+                        <h5 class="card-title">Fantasía</h5>
+                        <p class="card-text">Disfruta de una selección de películas cómicas que te harán reír a carcajadas. Desde comedias clásicas hasta las más nuevas, estas películas están garantizadas para mejorar tu estado de ánimo.</p>
+                        <a href="drama.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section>
-        <h2>Categorias</h2>
-        <div>
-            <ul>
-                <li>Acción</li>
-                <li>Aventura</li>
-                <li>Terror</li>
-                <li>Ciencia Ficción</li>
-                <li>Comedia</li>
-                <li>Drana</li>
-            </ul>
-        </div>
-    </section>
+    </div>
 
     <footer>
         <p class="p__footer">
@@ -93,7 +153,11 @@
             Contáctanos
         </p>
     </footer>
-     <!-- bootstrap -->
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- scripts de loading -->
+    <script src="./scripts/loading.js"></script>
+    <script src="./scripts/cargaPeliculas.js"></script>
+   <!-- bootstrap -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
