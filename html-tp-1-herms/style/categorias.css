@@ -1,4 +1,8 @@
-
+/* reseteamos el font size para que rem trabaje con un equivalente a 10 px = 1 rem  */
+html{
+  /* tamaño letra */
+  font-size: 62.5%;
+}    
 /* reseteamos el margin y padding de todos los elementos */
 *{
   margin: 0;
@@ -25,6 +29,15 @@ body {
   font-style: normal;
 }
 
-h3{
-  font-size: 1rem;
+p{
+  font-size: larger;
+}
+
+.p__footer{
+  display: flex;
+  justify-content: space-around;
+}
+
+.h1__categorias{
+  margin-top: 50px;
 }

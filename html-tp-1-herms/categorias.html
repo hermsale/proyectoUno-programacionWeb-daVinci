@@ -46,11 +46,11 @@
             <!-- menu usuario -->
             <ul class="menu menu__right--desplegado">
                 <li class="menu__right--lupa"><img class="img__right--lupa" src="./img/navbar/lupa.png" alt="menu"></li>
-                    <li class="li__usuario"><h3 class="me-2">Alejandro</h3><a href="#"><img class="img__right--usuario" src="./img/navbar/usuario.png" alt="menu"></a>
+                    <li class="li__usuario"><h3 class="me-2 exo-2">Alejandro</h3><a href="#"><img class="img__right--usuario" src="./img/navbar/usuario.png" alt="menu"></a>
                         <ul class="submenu submenu__right">
-                            <li><a href="#">Cuenta y configuración</a></li>
+                            <li><a href="cuenta.html">Cuenta y configuración</a></li>
                             <li><a href="contacto.html">Ayuda</a></li> 
-                            <li><a href="#">Perfiles</a></li> 
+                            <li><a href="index.html">Perfiles</a></li> 
                             <!-- <li><a href="#">Cerrar sesión</a></li> -->
                         </ul>
                     </li> 
@@ -61,10 +61,10 @@
                 <li><a href="#"><img class="img__right--usuario" src="./img/navbar/usuario.png" alt="menu"></a>
                     <ul class="submenu submenu__right">
                         <li><a href="#">Alejandro</a></li>
-                        <li><a href="#">Cuenta y configuración</a></li>
+                        <li><a href="cuenta.html">Cuenta y configuración</a></li>
                         <li><a href="contacto.html">Ayuda</a></li> 
-                        <li><a href="#">Perfiles</a></li> 
-                        <li><a href="#">Cerrar sesión</a></li>
+                        <li><a href="index.html">Perfiles</a></li> 
+                        <!-- <li><a href="#">Cerrar sesión</a></li> -->
                     </ul>
                 </li> 
             </ul>
@@ -72,14 +72,14 @@
     </header>
 
     <div class="container mt-5">
-        <h1 class="mb-4 text-center">Categorías de Películas</h1>
+        <h1 class="mb-4 text-center h1__categorias">Categorías de Películas</h1>
         <div class="row">
             <!-- Card 1 -->
             <div class="col-lg-4 col-md-6 mb-4">
                 <div class="card category-card">
                     <img src="img/categorias/pelicula-dia-john-wik.png" class="card-img-top" alt="Acción">
                     <div class="card-body bg-dark">
-                        <h5 class="card-title">Acción</h5>
+                        <h2 class="card-title">Acción</h2>
                         <p class="card-text">Explora las mejores películas de acción llenas de adrenalina y emocionantes escenas de combate.</p>
                         <a href="accion.html" class="btn btn-primary">Ver más</a>
                     </div>
@@ -90,7 +90,7 @@
                 <div class="card category-card  bg-dark">
                     <img src="img/categorias/uncharted.png" class="card-img-top" alt="Comedia">
                     <div class="card-body">
-                        <h5 class="card-title">Aventura</h5>
+                        <h2 class="card-title">Aventura</h2>
                         <p class="card-text">Disfruta de una selección de películas cómicas que te harán reír a carcajadas.</p>
                         <a href="comedia.html" class="btn btn-primary">Ver más</a>
                     </div>
@@ -101,7 +101,7 @@
                 <div class="card category-card  bg-dark">
                     <img src="img/categorias/american-pie-2.png" class="card-img-top" alt="Drama">
                     <div class="card-body">
-                        <h5 class="card-title">Comedia</h5>
+                        <h2 class="card-title">Comedia</h2>
                         <p class="card-text">Disfruta de una selección de películas cómicas que te harán reír a carcajadas. Desde comedias clásicas hasta las más nuevas, estas películas están garantizadas para mejorar tu estado de ánimo.</p>
                         <a href="drama.html" class="btn btn-primary">Ver más</a>
                     </div>
@@ -112,7 +112,7 @@
                 <div class="card category-card">
                     <img src="img/categorias/drama.png" class="card-img-top" alt="Acción">
                     <div class="card-body bg-dark">
-                        <h5 class="card-title">Drama</h5>
+                        <h2 class="card-title">Drama</h2>
                         <p class="card-text">Explora las mejores películas de acción llenas de adrenalina y emocionantes escenas de combate.</p>
                         <a href="accion.html" class="btn btn-primary">Ver más</a>
                     </div>
@@ -123,7 +123,7 @@
                 <div class="card category-card  bg-dark">
                     <img src="img/categorias/ciencia ficcion.png" class="card-img-top" alt="Comedia">
                     <div class="card-body">
-                        <h5 class="card-title">Ciencia Ficción</h5>
+                        <h2 class="card-title">Ciencia Ficción</h2>
                         <p class="card-text">Disfruta de una selección de películas cómicas que te harán reír a carcajadas.</p>
                         <a href="comedia.html" class="btn btn-primary">Ver más</a>
                     </div>
@@ -134,7 +134,7 @@
                 <div class="card category-card  bg-dark">
                     <img src="img/categorias/animada.png" class="card-img-top" alt="Drama">
                     <div class="card-body">
-                        <h5 class="card-title">Fantasía</h5>
+                        <h2 class="card-title">Fantasía</h2>
                         <p class="card-text">Disfruta de una selección de películas cómicas que te harán reír a carcajadas. Desde comedias clásicas hasta las más nuevas, estas películas están garantizadas para mejorar tu estado de ánimo.</p>
                         <a href="drama.html" class="btn btn-primary">Ver más</a>
                     </div>
@@ -142,18 +142,6 @@
             </div>
         </div>
     </div>
-
-    <footer>
-        <p class="p__footer">
-            ¿Preguntas? Llama al 0800 345 1111
-            Preguntas frecuentes
-            Centro de ayuda
-            Cuenta
-            Términos de uso
-            Privacidad
-            Contáctanos
-        </p>
-    </footer>
 
     <!-- scripts de loading -->
     <script src="./scripts/loading.js"></script>
