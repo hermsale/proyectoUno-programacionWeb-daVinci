@@ -131,7 +131,7 @@ header{
 
 
 /* pantalla pequeña lado izquierdo */
-@media(max-width:768px){
+@media(max-width:915px){
     .menu__left--hamburguesa{
         display: flex;
         width: 10%;
@@ -151,10 +151,14 @@ header{
         color: white;
         width: 20%;
     }
+
+    .menu__right--desplegado{
+        display: none;
+    }
 }
 
 /* pantalla grande lado izquierdo */
-@media(min-width:768px){
+@media(min-width:916px){
     .menu__left--desplegado{
         display: flex;
         width: 28%;
@@ -208,7 +212,7 @@ header{
 }
 
 /* pantalla mediana */
-@media(min-width:768px )and(max-width:1399px){
+@media(min-width:916px )and(max-width:1399px){
     .nav__menu{
         margin: 10px 0px;
     }

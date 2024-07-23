@@ -30,3 +30,32 @@ p{
     display: flex;
     justify-content: space-around;
 }
+
+.div__img--pelicula img {
+    width: 70%;
+    height: auto;
+    max-width: 690px;
+}
+
+.div__img--peliculas-recomendadas img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .div__img--pelicula img {
+        max-height: 400px;
+    }
+}
+
+@media (min-width: 992px) {
+    .div__img--pelicula img {
+        max-height: 600px;
+    }
+
+    .div__img--peliculas-recomendadas img {
+        max-width: 200px;
+    }
+}
