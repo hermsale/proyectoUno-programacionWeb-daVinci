@@ -292,3 +292,45 @@ body{
     transition: transform 0.3s ease, background-color 1s ease;
     transform: scale(1); 
 } */
+
+/* Ajuste de diseño para diferentes tamaños de pantalla */
+/* .card-img-top {
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+} */
+
+/* Mostrar solo en desktop */
+@media (min-width: 1200px) {
+    .carousel-desktop {
+        display: block;
+    }
+    .carousel-laptop,
+    .carousel-mobile {
+        display: none;
+    }
+}
+
+/* Mostrar solo en laptop */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .carousel-laptop {
+        display: block;
+    }
+    .carousel-desktop,
+    .carousel-mobile {
+        display: none;
+    }
+}
+
+/* Mostrar solo en mobile */
+@media (max-width: 767px) {
+    .carousel-mobile {
+        display: block;
+    }
+    .carousel-desktop,
+    .carousel-laptop {
+        display: none;
+    }
+}
