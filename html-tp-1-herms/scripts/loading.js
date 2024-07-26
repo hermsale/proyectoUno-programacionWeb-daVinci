@@ -18,23 +18,29 @@ document.addEventListener("DOMContentLoaded", function() {
 // loading carousel - tambien se agrego un temporizador para que la pagina quede no disponible mientras se carga todo
 document.addEventListener('DOMContentLoaded', () => {
     
-    const carouselLoading = document.querySelector('#carousel-principal');
+    const carouselLoading = document.querySelector('#carousel-principal-fluid ');
+    const carouselPrincipalLoading = document.querySelector('#carousel-principal');
     // seleccionamos al #carousel-principal y al .carousel-inner
-    const carouselInner = document.querySelector('#carousel-principal .carousel-inner');
+    const carouselInner = document.querySelector('#carousel-principal-fluid .carousel-inner');
+    const carouselPrincipalInner = document.querySelector('#carousel-principal .carousel-inner');
 
     // Agregamos un temporizador para que la pagina quede no disponible mientras se carga todo
     const overlay = document.getElementById('overlay');
     overlay.style.display = 'block';
     // indicamos que el display de los elementos seleccionados en el querySelector. sea none
     carouselInner.style.display = 'none';
+    carouselPrincipalInner.style.display = 'none';
     // Agregar la clase 'loading' para indicar que está cargando
     carouselLoading.classList.add("loading");
+    carouselPrincipalLoading.classList.add("loading");
     // Esperar 3 segundos antes de quitar la clase 'loading' y mostrar el .carousel-inner
     setTimeout(() =>{
         // una vez que pasan 3 segundos eliminamos del carousel-principal la clase 'loading'
         carouselLoading.classList.remove("loading");
+        carouselPrincipalLoading.classList.remove("loading");
         // y mostramos el .carousel-inner
         carouselInner.style.display = 'block';
+        carouselPrincipalInner.style.display = "block";
         // quitamos el overlay
         overlay.style.display = 'none';
     }, 3000);  // 3000 milisegundos = 3 segundos

@@ -311,6 +311,14 @@ body{
     .carousel-mobile {
         display: none;
     }
+
+    .carousel-principal-mobile{
+        display: none;
+    }
+
+    .carousel-principal{
+        display: block;
+    }
 }
 
 /* Mostrar solo en laptop */
@@ -322,6 +330,14 @@ body{
     .carousel-mobile {
         display: none;
     }
+
+    .carousel-principal-mobile{
+        display: block;
+    }
+
+    .carousel-principal{
+        display: none;
+    }
 }
 
 /* Mostrar solo en mobile */
@@ -331,6 +347,14 @@ body{
     }
     .carousel-desktop,
     .carousel-laptop {
+        display: none;
+    }
+
+    .carousel-principal-mobile{
+        display: block;
+    }
+
+    .carousel-principal{
         display: none;
     }
 }

@@ -11,7 +11,7 @@
 }
 
 /* la clase loading la agrego con JS */
-#carousel-principal.loading {
+#carousel-principal-fluid.loading, #carousel-principal.loading{
         width: 100%;
         /* 
             Concepto de padding-top para mantener la relación de aspecto
