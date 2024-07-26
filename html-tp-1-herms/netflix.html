@@ -100,141 +100,394 @@
         </div>
     </div>
 
-     <!-- seccion top 10 - resolver con carousel en agrupaciones de 5 - tambien podria ser aplicando animacion de movimiento con CSS -->
-     <section class="container mt-4">
-        <h2 class="fw-bold exo-2 fs-1 fs-md-4 fs-lg-5">Top 10 de la semana</h2>
-        <!-- carousel -->
-        <div id="carousel-top10" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row" style="overflow-x: visible; width: 100%;">
-                        <div class="col-12" >
-                    <!-- primeras 4 peliculas -->
-
-                                <div class="card card-top-10 p-1 col-3 bg-dark hover-bg-black">
-
-                                    <div class="card-app__loading col-3"></div>
-                                    <img src="imagenes/peliculas-series/hard-fie.png" class="card-img-top" alt="...">
-                                    <div class="card-body p-0 m-0">
-                                    <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney"></p>
-                                    </div>
-                                </div>
-                                
-                                <div class="card card-top-10 p-1 col-3 bg-dark hover-bg-black">
-                                    <!-- <div class="card-seguir-viendo__loading p-1 col-3 bg-dark hover-bg-black"></div> -->
-                                    <div class="card-app__loading col-3"></div>
-                                    <img src="imagenes/peliculas-series/armageddon.png" class="card-img-top" alt="...">
-                                    <div class="card-body p-0 m-0">
-                                        <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class=""    style="width: 50%" alt="disney"></p>
-                                    </div>
-                                </div>
-
-                                <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-
-                                    <!-- <div class="card-seguir-viendo__loading p-1 col-3 bg-dark hover-bg-black"></div> -->
-                                    <div class="card-app__loading col-3"></div>
-                                    <img src="imagenes/peliculas-series/anillos.png" class="card-img-top" alt="...">
-                                    <div class="card-body p-0 m-0">
-                                        <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class=""    style="width: 50%" alt="disney"></p>
-                                    </div>
-                                </div>
-
-                                <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-                                    <div class="card-app__loading col-3"></div>
-                                    <!-- <div class="card-seguir-viendo__loading p-1 col-3 bg-dark hover-bg-black"></div> -->
-                                    <img src="imagenes/peliculas-series/johnwick.png" class="card-img-top" alt="...">
-                                    <div class="card-body p-0 m-0">
-                                        <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class=""    style="width: 50%" alt="disney"></p>
-                                    </div>
-                                </div>
-                    <!-- fin -->
+    <!-- vista mobile -->
+<section class="container mt-4 carousel-mobile">
+    <h2 class="fw-bold exo-2 fs-1 fs-md-4 fs-lg-5">Top 10 de la semana</h2>
+    <!-- carousel -->
+    <div id="carousel-top10-mobile" class="carousel slide">
+        <div class="carousel-inner">
+            <!-- Item 1 -->
+            <div class="carousel-item active">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12">
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/spiderman.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/disney-icon.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- segundo item -->
-                <div class="carousel-item">
-                    <div class="row" style="overflow-x: visible; width: 100%;">
-                        <div class="col-12">
-                                <!-- segundas 4 peliculas -->
-                            <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-                                <img src="imagenes/peliculas-series/scars-face.png" class="card-img-top" alt="...">
-                                <div class="card-body p-0 m-0">
-                                    <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/netflix.png" class=""   style="width: 50%"  alt="disney"></p>
-                                </div>
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/star-wars.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/disney-icon.png" class="" style="width: 50%" alt="disney"></p>
                             </div>
-
-                            <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-                                <img src="imagenes/peliculas-series/terminator-2.png" class="card-img-top" alt="...">
-                                <div class="card-body p-0 m-0">
-                                    <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class=""   style="width: 50%" alt="disney"></p>
-                                </div>
-                            </div>
-
-                            <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-                                <img src="imagenes/peliculas-series/spiderman.png" class="card-img-top" alt="...">
-                                <div class="card-body p-0 m-0">
-                                    <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/disney-icon.png" class=""  style="width: 50%"  alt="disney"></p>
-                                </div>
-                            </div>
-
-                            <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-                                <img src="imagenes/peliculas-series/pulp-fiction.png" class="card-img-top" alt="...">
-                                <div class="card-body p-0 m-0">
-                                    <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class="" style="width: 50%"  alt="disney"></p>
-                                </div>
-                            </div>
-                            <!-- fin -->
-                        </div>
-                    </div>
-                </div>
-                <!-- tercer item -->
-                <div class="carousel-item">
-                    <div class="row" style="overflow-x: visible; width: 100%;">
-                        <div class="col-12">
-                    <!-- terceras 4 peliculas -->
-                                <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-                                    <img src="imagenes/peliculas-series/rambo.png" class="card-img-top" alt="...">
-                                    <div class="card-body p-0 m-0">
-                                    <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney"></p>
-                                    </div>
-                                </div>
-
-                                <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-                                    <img src="imagenes/peliculas-series/terminator-1.png" class="card-img-top" alt="...">
-                                    <div class="card-body p-0 m-0">
-                                    <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney"></p>
-                                    </div>
-                                </div>
-
-                                <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-                                    <img src="imagenes/peliculas-series/fast-furious.png" class="card-img-top" alt="...">
-                                    <div class="card-body p-0 m-0">
-                                        <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/netflix.png" class="" style="width: 50%"  alt="disney"></p>
-                                    </div>
-                                </div>
-
-                                <div class="card card-top-10 col-3 p-1 bg-dark hover-bg-black">
-                                    <img src="imagenes/peliculas-series/star-wars.png" class="card-img-top" alt="...">
-                                    <div class="card-body p-0 m-0">
-                                        <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/disney-icon.png" class="" style="width: 50%"  alt="disney"></p>
-                                    </div>
-                                </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- fin -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-top10" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carousel-top10" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+            <!-- Item 2 -->
+            <div class="carousel-item">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12">
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/fast-furious.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/anillos.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 3 -->
+            <div class="carousel-item">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12">
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/johnwick.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/armageddon.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 4 -->
+            <div class="carousel-item">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12">
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/pulp-fiction.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/rambo.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 5 -->
+            <div class="carousel-item">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12">
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/scars-face.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/terminator-2.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Item 6 -->
+            <div class="carousel-item">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12">
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/terminator-1.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                        <div class="card p-1 col-6 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/hard-fie.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img"><img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <!-- Carousel controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-top10-mobile" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-top10-mobile" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
 
+<!-- vista desktop -->
+<section class="container mt-4 carousel-desktop">
+    <h2 class="fw-bold exo-2 fs-1 fs-md-4 fs-lg-5">Top 10 de la semana</h2>
+    <!-- carousel -->
+    <div id="carousel-top10" class="carousel slide">
+        <div class="carousel-inner">
+            <!-- Primer item -->
+            <div class="carousel-item active">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12">
+                        <!-- primeras 4 peliculas -->
+                        <div class="card p-1 col-3 bg-dark hover-bg-black">
+                            <div class="card-app__loading col-3"></div>
+                            <img src="imagenes/peliculas-series/hard-fie.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-1 col-3 bg-dark hover-bg-black">
+                            <div class="card-app__loading col-3"></div>
+                            <img src="imagenes/peliculas-series/armageddon.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <div class="card-app__loading col-3"></div>
+                            <img src="imagenes/peliculas-series/anillos.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <div class="card-app__loading col-3"></div>
+                            <img src="imagenes/peliculas-series/johnwick.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin -->
+                    </div>
+                </div>
+            </div>
+            <!-- Segundo item -->
+            <div class="carousel-item">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12">
+                        <!-- segundas 4 peliculas -->
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/scars-face.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/terminator-2.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/spiderman.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/disney-icon.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/pulp-fiction.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <!-- fin -->
+                    </div>
+                </div>
+            </div>
+            <!-- Tercer item -->
+            <div class="carousel-item">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12">
+                        <!-- terceras 4 peliculas -->
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/rambo.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/terminator-1.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/fast-furious.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-3 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/star-wars.png" class="card-img-top" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/disney-icon.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-top10" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-top10" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<!-- vista laptop -->
+<section class="container mt-4 carousel-laptop">
+    <h2 class="fw-bold exo-2 fs-1 fs-md-4 fs-lg-5">Top 10 de la semana</h2>
+    <!-- carousel -->
+    <div id="carousel-top10-laptop" class="carousel slide">
+        <div class="carousel-inner">
+            <!-- Primer item -->
+            <div class="carousel-item active">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12 d-flex justify-content-between">
+                        <div class="card p-1 col-4 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/hard-fie.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="netflix">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card p-1 col-4 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/armageddon.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="hbo">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-4 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/anillos.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="hbo">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Segundo item -->
+            <div class="carousel-item">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12 d-flex justify-content-between">
+                        <div class="card col-4 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/scars-face.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="netflix">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-4 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/terminator-2.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="hbo">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-4 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/spiderman.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/disney-icon.png" class="" style="width: 50%" alt="disney">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tercer item -->
+            <div class="carousel-item">
+                <div class="row" style="overflow-x: visible; width: 100%;">
+                    <div class="col-12 d-flex justify-content-between">
+                        <div class="card col-4 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/rambo.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="netflix">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-4 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/terminator-1.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/hbo.png" class="" style="width: 50%" alt="hbo">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card col-4 p-1 bg-dark hover-bg-black">
+                            <img src="imagenes/peliculas-series/fast-furious.png" class="card-img-top d-block w-100" alt="...">
+                            <div class="card-body p-0 m-0">
+                                <p class="card-title p__cardSeguirViendo--img">
+                                    <img src="./imagenes/icon/netflix.png" class="" style="width: 50%" alt="netflix">
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-top10-laptop" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel-top10-laptop" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
 
     <!-- Las películas mejor calificadas en IMDb -->
     <section class="container mt-4">

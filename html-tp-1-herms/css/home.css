@@ -334,3 +334,17 @@ body{
         display: none;
     }
 }
+
+/* Estilo general para las imágenes */
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para imágenes en pantallas pequeñas (móviles) */
+@media (max-width: 767px) {
+    .img-responsive {
+        width: 130px;
+        height: 200px;
+    }
+}
